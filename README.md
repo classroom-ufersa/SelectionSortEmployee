@@ -1,2 +1,2 @@
-# Seletion_Sort
+# Seletion Sort
 Ordenação de strings com Selection Sort
