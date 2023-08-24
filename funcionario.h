@@ -18,8 +18,14 @@ Funcionario *func_cria(char* nome, char* cargo, int documento);
 */
 Funcionario *func_libera(Funcionario* func);
 
+/* Função func_compara
+  compara o nome dos funcionários, a partir de uma ordem alfabética.
+*/
+int func_compara(char* nome1, char* nome2);
+
 /* Função func_ordena
-  ordena os funcionários por ordem alfabética, por meio do algoritmo Selection Sort
+  utiliza o algoritmo de busca Selection Sort para ordenar os funcionários
+  por ordem alfabética
 */
 void func_ordena(Funcionario** func, int count);
 
