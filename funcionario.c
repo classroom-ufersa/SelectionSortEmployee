@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "funcionario.h"
 
 struct funcionario {
@@ -14,8 +16,8 @@ Funcionario *func_cria(char* nome, char* cargo, int documento) {
         printf("Sem memória!");
         exit(1);
     }
-    strcpy(funcionario->nome[31], nome);
-    strcpy(funcionario->cargo[101], cargo);
+    strcpy(funcionario->nome, nome);
+    strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
     return funcionario; 
 }
@@ -27,7 +29,7 @@ Funcionario *func_libera(Funcionario* func) {
 
 
 int func_compara(char* nome1, char* nome2) {
-  
+  return strcmp(strupr(nome1), strupr(nome2));
 }
 
 void func_ordena(Funcionario** func, int count) {
