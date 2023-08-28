@@ -29,7 +29,8 @@ Funcionario *func_libera(Funcionario* func) {
 
 
 int func_compara(char* nome1, char* nome2) {
-
+  int tamanho;
+  
 }
 
 void func_ordena(Funcionario** func, int count) {
