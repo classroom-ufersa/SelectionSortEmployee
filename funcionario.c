@@ -9,12 +9,20 @@ struct funcionario {
 
 
 Funcionario *func_cria(char* nome, char* cargo, int documento) {
-
+    Funcionario * funcionario = (Funcionario*)malloc(sizeof(funcionario));
+    if (funcionario == NULL){
+        printf("Sem memória!");
+        exit(1);
+    }
+    strcpy(funcionario->nome[31], nome);
+    strcpy(funcionario->cargo[101], cargo);
+    funcionario->documento = documento;
+    return funcionario; 
 }
 
 
 Funcionario *func_libera(Funcionario* func) {
-
+    free(func);
 }
 
 
@@ -56,5 +64,14 @@ void func_ordena(Funcionario** func, int count) {
 
 
 void func_salva(Funcionario** func, FILE* fl) {
-  
+    FILE *saida;
+
+    saida = fopen("saida.txt", "w");
+    if (saida == NULL){
+        printf("Não foi possivel abrir o arquivo de saida.\n");
+        return 1;
+    }
+
+    fclose(saida);
+    printf("Verifique o arquivo de saida!\n");
 }
