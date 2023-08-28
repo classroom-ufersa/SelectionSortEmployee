@@ -72,7 +72,7 @@ void func_ordena(Funcionario** func, int count) {
 void func_salva(Funcionario** func, FILE* fl, int count) {
     FILE *saida;
 
-    saida = fopen("saida.txt", "a");
+    saida = fopen("arquivo.txt", "a");
     if (saida == NULL){
         printf("Não foi possivel abrir o arquivo de saida.\n");
         exit(1);
@@ -80,9 +80,28 @@ void func_salva(Funcionario** func, FILE* fl, int count) {
 
     int i;
     for (i = 0; i < count; i++) {
-      fprintf(saida, "%s\t%s\t%d\n", func[i]->nome, func[i]->cargo, func[i]->documento);
+      fprintf(saida, "%d - %s\t%s\t%d\n", i+1, func[i]->nome, func[i]->cargo, func[i]->documento);
     }
     
     fclose(saida);
+    printf("Verifique o arquivo de saida!\n");
+}
+
+void leia_carregue(FILE *fl, Funcionario **func){
+	FILE *leia;
+
+	leia = fopen("arquivo.txt", "rt");
+	if (leia == NULL){
+		printf("Não foi possivel abrir o arquivo de saida.\n");
+        exit(1);
+	}
+
+	while (!feoc(leia))
+	{
+		
+	}
+	
+
+	fclose(leia);
     printf("Verifique o arquivo de saida!\n");
 }
