@@ -68,7 +68,7 @@ void func_ordena(Funcionario** func, int count) {
 void func_salva(Funcionario** func, FILE* fl) {
     FILE *saida;
 
-    saida = fopen("saida.txt", "w");
+    saida = fopen("saida.txt", "a");
     if (saida == NULL){
         printf("Não foi possivel abrir o arquivo de saida.\n");
         return 1;
