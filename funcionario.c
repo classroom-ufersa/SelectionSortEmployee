@@ -77,7 +77,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
 {
     FILE *saida;
 
-    saida = fopen("saida.txt", "a");
+    saida = fopen("saida.txt", "w");
     if (saida == NULL)
     {
         printf("Não foi possivel abrir o arquivo de saida.\n");
