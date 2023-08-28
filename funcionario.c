@@ -10,7 +10,7 @@ struct funcionario {
 };
 
 
-Funcionario *func_cria(char* nome, char* cargo, int documento) {
+Funcionario *func_cadastra(char* nome, char* cargo, int documento) {
     Funcionario * funcionario = (Funcionario*)malloc(sizeof(funcionario));
     if (funcionario == NULL){
         printf("Sem memória!");
