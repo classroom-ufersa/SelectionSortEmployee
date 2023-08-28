@@ -8,8 +8,8 @@ struct funcionario
     char nome[31];
     char cargo[101];
     int documento;
-	int ID;
 };
+
 
 Funcionario *func_cadastra(char *nome, char *cargo, int documento)
 {
@@ -25,7 +25,8 @@ Funcionario *func_cadastra(char *nome, char *cargo, int documento)
     return funcionario;
 }
 
-void func_libera(Funcionario **func, int count) {       
+void func_libera(Funcionario **func, int count)
+{       
     int i;
     for (i = 0; i < count; i++) {
         free(func[i]);
@@ -59,7 +60,7 @@ void func_ordena(Funcionario **func, int count)
         primeiroID = i;
         for (j = i + 1; j < count; j++)
         {
-            if (func_compara(func[j]->nome, func[primeiroID]->nome))
+            if (func_compara(func[primeiroID]->nome, func[j]->nome) == 1)
             {
                 primeiroID = j;
             }
@@ -78,7 +79,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
 {
     FILE *saida;
 
-    saida = fopen("arquivo.txt", "w");
+    saida = fopen("arquivo.txt", "wt");
     if (saida == NULL)
     {
         printf("Não foi possivel abrir o arquivo de saida.\n");
@@ -89,31 +90,40 @@ void func_salva(Funcionario **func, FILE *fl, int count)
 
     int i;
     for (i = 0; i < count; i++) {
-      fprintf(saida, "%d - %s\t%s\t%d\n", i+1, func[i]->nome, func[i]->cargo, func[i]->documento);
+      fprintf(saida, "%d\t%s\t%s\t%d\n", i+1, func[i]->nome, func[i]->cargo, func[i]->documento);
     }
 
     fclose(saida);
     printf("Verifique o arquivo de saida!\n");
 }
 
-int func_leia(Funcionario **func, FILE *fl){
-	FILE *leia;
+int func_leia(Funcionario **func, FILE *fl)
+{
 	int i = 0;
+    
+    /* função retorna o índice que devemos iniciar 
+    no cadastro de novos funcionários. Portanto,
+    caso o arquivo esteja vazio, não há o que armazenar*/
+    // verifica se o arquivo está vazio:
+    fseek(fl, 0, SEEK_END);
+    // printf("%ld\n", ftell(fl));
+    if (ftell(fl) != 0) 
+    {   
+        fseek(fl, 0, SEEK_SET);
+        while (!feof(fl))
+        {   
+            char nome[31], cargo[101];
+            int id, doc;
+            
+            fscanf(fl, "%d\t%[^\t]\t%[^\t]\t%d\n", &id, nome, cargo, &doc);
+            func[i] = func_cadastra(nome, cargo, doc);
+            printf("%d\t%s\t%s\t%d\n", id, func[i]->nome, func[i]->cargo, func[i]->documento);
 
-	leia = fopen("arquivo.txt", "rt");
-	if (leia == NULL){
-		printf("Não foi possivel abrir o arquivo de saida.\n");
-        exit(1);
-	}
+            i++;
+        }
+    }
 
-	while (!feof(leia))
-	{
-		func[i] = (Funcionario*) calloc(1,sizeof(Funcionario));
-		fscanf(leia, "%d - %s\t%s\t%d\n", func[i]->ID, func[i]->nome, func[i]->cargo, func[i]->documento);
-		i++;
-	}
 	
-	fclose(leia);
-
+	fclose(fl);
 	return i;
 }
