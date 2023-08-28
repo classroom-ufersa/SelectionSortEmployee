@@ -11,20 +11,24 @@ struct funcionario {
 
 
 Funcionario *func_cadastra(char* nome, char* cargo, int documento) {
-    Funcionario * funcionario = (Funcionario*)malloc(sizeof(funcionario));
+    Funcionario* funcionario = (Funcionario*)malloc(sizeof(Funcionario));
     if (funcionario == NULL){
         printf("Sem memória!");
         exit(1);
     }
-    strcpy(funcionario->nome[31], nome);
-    strcpy(funcionario->cargo[101], cargo);
+    strcpy(funcionario->nome, nome);
+    strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
     return funcionario; 
 }
 
 
-Funcionario *func_libera(Funcionario* func) {
-    free(func);
+void func_libera(Funcionario** func, int count) {
+  int i;
+  for (i = 0; i < count; i++) {
+    free(func[i]);
+  }
+  free(func);
 }
 
 

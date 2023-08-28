@@ -16,7 +16,7 @@ Funcionario *func_cadastra(char* nome, char* cargo, int documento);
 /* Função func_libera
   apaga o cadastro de um funcionario, liberando a memória alocada
 */
-Funcionario *func_libera(Funcionario* func);
+void func_libera(Funcionario** func, int count);
 
 /* Função func_compara
   compara o nome dos funcionários, a partir de uma ordem alfabética.
