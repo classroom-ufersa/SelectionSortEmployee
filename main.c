@@ -12,10 +12,13 @@ int opcoes(void);
 
 int main(void){ 
 
-    int opcao, documento, contador_funcionario = 0;
+    int opcao, documento, ID;
     char nome[31], cargo[101];
 
     Funcionario **funcionario = (Funcionario**) calloc(MAX_FUNC,sizeof(Funcionario*));
+    FILE *saida;
+
+    ID = func_leia(funcionario, saida);
 
     do
     {
@@ -33,9 +36,9 @@ int main(void){
             printf("Digite o cargo: \n");
             scanf(" %100[^\n]", cargo);
 
-            if(contador_funcionario <= MAX_FUNC){
-                funcionario[contador_funcionario] = func_cadastra(nome, cargo, documento);
-                contador_funcionario++;
+            if(ID <= MAX_FUNC){
+                funcionario[ID] = func_cadastra(nome, cargo, documento);
+                ID++;
             }else{
                 printf("Maximo de funcionarios atingido!");
             }
