@@ -25,19 +25,11 @@ int main(void){
 		printf("Nao foi possivel abrir o arquivo.\n");
         exit(1);
 	}
-    // tempo inicio do cadastro:
-    clock_t inicio = clock();
-
+    
     // ID armazena quantidade inicial de funcionários, para comparação futura:
     ID = func_leia(funcionario, dados_func);
     // count_func irá ser usado como indice do vetor de ponteiros:
     count_func = ID;
-
-    // tempo da execução do Selection Sort:
-    double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
-    tempo_sort = tempo_sort * 1000; //milisegundos
-    printf("\nTempo de execucao: %.50fms\n", tempo_sort);
-
 
     do
     {
@@ -45,43 +37,48 @@ int main(void){
 
         switch (opcao)
         {
-            case 1:
-                
-                printf("Digite o nome: \n");
+            case 1:  
+                printf("Digite o nome: ");
                 scanf(" %30[^\n]", nome);
-                printf("Digite o cargo: \n");
+                fflush(stdin);
+                printf("Digite o cargo: ");
                 scanf(" %100[^\n]", cargo);
-                printf("Digite o documento: \n");
+                fflush(stdin);
+                printf("Digite o documento: ");
                 scanf("%d", &documento);
-                printf("%d", count_func);
-                int tag = 1;
+                fflush(stdin);
+                // printf("%d", count_func);
                 
-                if(count_func < MAX_FUNC){
-                    if(func_procura(funcionario, count_func, documento)){
-                        funcionario[count_func] = func_cadastra(nome, cargo, documento, tag);
+                if (count_func < MAX_FUNC)
+                {
+                    if (func_procura(funcionario, count_func, documento))
+                    {
+                        funcionario[count_func] = func_cadastra(1, nome, cargo, documento);
                         count_func++;
-                    }else{
-                        printf("Documento ja em uso!");
+                    } else {
+                        printf("\nO documento inserido ja foi cadastrado por outro funcionario!\n\n");
                     }
                     func_ordena(funcionario, count_func);
-                }else{
+                } else
+                {
                     printf("Maximo de funcionarios atingido!");
                 }
                 
                 break;
+
             case 2:
-
                 func_listar(funcionario, count_func);
-
                 break;
     
             case 3:
                 char resp;
+                int novos = count_func - ID;
                 printf("\nEncerrando Programa...\n");
-                if (count_func > ID) {
-                    printf("\nHa funcionarios cadastrados que ainda nao foram salvos.");
+                if (novos != 0) {
+                    printf("\nHa %d cadastros novos que ainda nao foram salvos.", novos);
                     printf("\nDeseja Salvar [S/N]? ");
                     scanf(" %c", &resp);
+                    fflush(stdin);
                     
                     if (toupper(resp) == 'S')
                     {
