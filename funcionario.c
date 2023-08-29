@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "funcionario.h"
 
 struct funcionario
@@ -86,7 +87,20 @@ void func_salva(Funcionario **func, FILE *fl, int count)
         exit(1);
     }
 
+
+    // =============================
+
+    // tempo inicio do cadastro:
+    clock_t inicio = clock();
+
 	func_ordena(func, count);
+
+    // tempo da execução do Selection Sort:
+    double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
+    tempo_sort = tempo_sort; //milisegundos
+
+    // =============================
+
 
     int i;
     for (i = 0; i < count; i++) {
@@ -95,6 +109,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
 
     fclose(saida);
     printf("Verifique o arquivo de saida!\n");
+    printf("\nTempo de execucao: %.10fs\n", tempo_sort);
 }
 
 int func_leia(Funcionario **func, FILE *fl)
