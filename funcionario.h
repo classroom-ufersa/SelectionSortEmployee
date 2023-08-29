@@ -11,7 +11,7 @@ typedef struct funcionario Funcionario;
 /* Função func_cria
   cadastra um novo arquivo funcionário, alocando memória e preenchendo os parâmetros
 */
-Funcionario *func_cadastra(char *nome, char *cargo, int documento);
+Funcionario *func_cadastra(Funcionario **func, int count, char *nome, char *cargo, int documento);
 
 /* Função func_libera
   apaga o cadastro de um funcionario, liberando a memória alocada
@@ -32,7 +32,7 @@ void func_ordena(Funcionario **func, int count);
 /* Função func_leia
   Lê todos os dadosd do arquivo e armazena na struct
 */
-int func_leia(Funcionario **func, FILE *fl);
+int func_leia(Funcionario **func, FILE *fl, int count);
 
 /* Função func_salva
   guarda dados do tipo estruturado no arquivo

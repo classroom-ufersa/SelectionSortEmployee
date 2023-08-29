@@ -11,7 +11,7 @@ struct funcionario
 };
 
 
-Funcionario *func_cadastra(char *nome, char *cargo, int documento)
+Funcionario *func_cadastra(Funcionario **func, int count,  char *nome, char *cargo, int documento)
 {
     Funcionario *funcionario = (Funcionario *)malloc(sizeof(Funcionario));
     if (funcionario == NULL)
@@ -19,6 +19,8 @@ Funcionario *func_cadastra(char *nome, char *cargo, int documento)
         printf("Sem memória!");
         exit(1);
     }
+    int confirmacao = func_procura(func, count, documento);
+    
     strcpy(funcionario->nome, nome);
     strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
@@ -97,7 +99,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
     printf("Verifique o arquivo de saida!\n");
 }
 
-int func_leia(Funcionario **func, FILE *fl)
+int func_leia(Funcionario **func, FILE *fl, int count)
 {
 	int i = 0;
     
@@ -116,7 +118,7 @@ int func_leia(Funcionario **func, FILE *fl)
             int id, doc;
             
             fscanf(fl, "%d\t%[^\t]\t%[^\t]\t%d\n", &id, nome, cargo, &doc);
-            func[i] = func_cadastra(nome, cargo, doc);
+            func[i] = func_cadastra(func, count, nome, cargo, doc);
             printf("%d\t%s\t%s\t%d\n", id, func[i]->nome, func[i]->cargo, func[i]->documento);
 
             i++;
