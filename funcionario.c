@@ -24,7 +24,8 @@ Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag)
     strcpy(funcionario->nome, nome);
     strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
-    funcionario->tag = 1;
+    funcionario->tag = tag;
+
     return funcionario;
 }
 
@@ -131,11 +132,11 @@ int func_leia(Funcionario **func, FILE *fl)
         while (!feof(fl))
         {   
             char nome[31], cargo[101];
-            int id, doc;
+            int tag = 0, id, doc;
             
             fscanf(fl, "%d\t%[^\t]\t%[^\t]\t%d\n", &id, nome, cargo, &doc);
             func[i] = func_cadastra(nome, cargo, doc, 0);
-            printf("%d\t%s\t%s\t%d\n", id, func[i]->nome, func[i]->cargo, func[i]->documento);
+            printf("%d\t%d\t%s\t%s\t%d\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
 
             i++;
         }
@@ -151,10 +152,10 @@ void func_listar(Funcionario **func, int count){
 
     int i;
     for(i = 0; i <= count; i++){
-        if(/*execucao*/count > 1){
-            printf("* %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
+        if(func[i]->tag == 1){
+            printf("* %d %s %s %d\n", func[i]->tag, func[i]->nome, func[i]->cargo, func[i]->documento);
         }else{
-            printf("  %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
+            printf("  %s %s %d\n", func[i]->nome, func[i]->cargo, func[i]->documento);
         }
     }
 }
