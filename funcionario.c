@@ -8,7 +8,7 @@ struct funcionario
 {
     int tag;
     char nome[31];
-    char cargo[101];
+    char cargo[41];
     long int documento;
 };
 

@@ -15,7 +15,7 @@ int main(void){
 
     int count_func, ID;
     int opcao, documento;
-    char nome[31], cargo[101];
+    char nome[31], cargo[41];
 
     Funcionario **funcionario = (Funcionario**) calloc(MAX_FUNC,sizeof(Funcionario*));
     
@@ -42,7 +42,7 @@ int main(void){
                 scanf(" %30[^\n]", nome);
                 fflush(stdin);
                 printf("Digite o cargo: ");
-                scanf(" %100[^\n]", cargo);
+                scanf(" %40[^\n]", cargo);
                 fflush(stdin);
                 printf("Digite o documento: ");
                 scanf("%d", &documento);
