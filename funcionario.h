@@ -2,7 +2,6 @@
 
 /* Dependência de módulos */
 #include <stdio.h>
-#include <stdlib>
 
 /* Tipo Exportado */
 typedef struct funcionario Funcionario;
