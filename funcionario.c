@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "funcionario.h"
 
 struct funcionario
@@ -8,22 +9,22 @@ struct funcionario
     char nome[31];
     char cargo[101];
     int documento;
+    int tag;
 };
 
 
-Funcionario *func_cadastra(Funcionario **func, int count,  char *nome, char *cargo, int documento)
+Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag)
 {
     Funcionario *funcionario = (Funcionario *)malloc(sizeof(Funcionario));
     if (funcionario == NULL)
     {
         printf("Sem memória!");
         exit(1);
-    }
-    int confirmacao = func_procura(func, count, documento);
-    
+    }   
     strcpy(funcionario->nome, nome);
     strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
+    funcionario->tag = 1;
     return funcionario;
 }
 
@@ -88,15 +89,30 @@ void func_salva(Funcionario **func, FILE *fl, int count)
         exit(1);
     }
 
+
+    // =============================
+
+    // tempo inicio do cadastro:
+    clock_t inicio = clock();
+
 	func_ordena(func, count);
+
+    // tempo da execução do Selection Sort:
+    double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
+    tempo_sort = tempo_sort; //milisegundos
+
+    // =============================
+
 
     int i;
     for (i = 0; i < count; i++) {
+        func[i]->tag = 0;
       fprintf(saida, "%d\t%s\t%s\t%d\n", i+1, func[i]->nome, func[i]->cargo, func[i]->documento);
     }
 
     fclose(saida);
     printf("Verifique o arquivo de saida!\n");
+    printf("\nTempo de execucao: %.10fs\n", tempo_sort);
 }
 
 int func_leia(Funcionario **func, FILE *fl, int count)
@@ -118,7 +134,7 @@ int func_leia(Funcionario **func, FILE *fl, int count)
             int id, doc;
             
             fscanf(fl, "%d\t%[^\t]\t%[^\t]\t%d\n", &id, nome, cargo, &doc);
-            func[i] = func_cadastra(func, count, nome, cargo, doc);
+            func[i] = func_cadastra(nome, cargo, doc, 0);
             printf("%d\t%s\t%s\t%d\n", id, func[i]->nome, func[i]->cargo, func[i]->documento);
 
             i++;

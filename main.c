@@ -2,14 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <time.h>
 #include "funcionario.h"
 
 
-#define MAX_FUNC 5
+#define MAX_FUNC 1000
 
 int opcoes(void);
 
 int main(void){ 
+
 
     int count_func, ID;
     int opcao, documento;
@@ -23,11 +25,19 @@ int main(void){
 		printf("Nao foi possivel abrir o arquivo.\n");
         exit(1);
 	}
+    // tempo inicio do cadastro:
+    clock_t inicio = clock();
 
     // ID armazena quantidade inicial de funcionários, para comparação futura:
     ID = func_leia(funcionario, dados_func, count_func);
     // count_func irá ser usado como indice do vetor de ponteiros:
     count_func = ID;
+
+    // tempo da execução do Selection Sort:
+    double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
+    tempo_sort = tempo_sort * 1000; //milisegundos
+    printf("\nTempo de execucao: %.50fms\n", tempo_sort);
+
 
     do
     {
@@ -44,6 +54,8 @@ int main(void){
                 printf("Digite o documento: \n");
                 scanf("%d", &documento);
                 printf("%d", count_func);
+                
+                
                 if(count_func < MAX_FUNC){
                     funcionario[count_func] = func_cadastra(funcionario, count_func, nome, cargo, documento);
                     count_func++;
@@ -86,9 +98,8 @@ int main(void){
     return 0;
 }
 
-
-int opcoes(void){
-
+int opcoes(void)
+{
     int opcao;
 
     printf("\n1 - Cadastar funcionario");
@@ -96,6 +107,6 @@ int opcoes(void){
     printf("\n3 - Encerrar");
     printf("\nEscolha uma opcao: ");
     scanf("%d", &opcao);
+    fflush(stdin);
     return opcao;
-
 }
