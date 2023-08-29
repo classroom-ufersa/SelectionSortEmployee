@@ -140,3 +140,15 @@ void func_listar(Funcionario **func, int count){
         }
     }
 }
+
+int func_procura(Funcionario **func, int count, int documento){
+
+    int i;
+    for(i = 0; i <= count; i++){
+        if(func[i]->documento == documento){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+}

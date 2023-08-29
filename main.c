@@ -54,7 +54,7 @@ int main(void){
                 break;
             case 2:
 
-                func_listar(funcionario);
+                func_listar(funcionario, count_func);
 
                 break;
     
