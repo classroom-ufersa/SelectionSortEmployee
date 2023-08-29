@@ -63,10 +63,11 @@ int main(void){
                     }else{
                         printf("Documento ja em uso!");
                     }
+                    func_ordena(funcionario, count_func);
                 }else{
                     printf("Maximo de funcionarios atingido!");
                 }
-
+                
                 break;
             case 2:
 
