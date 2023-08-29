@@ -12,7 +12,7 @@ typedef struct funcionario Funcionario;
 /* Função func_cria
   cadastra um novo arquivo funcionário, alocando memória e preenchendo os parâmetros
 */
-Funcionario **func_cadastra(char *nome, char *cargo, int documento, int tag);
+Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag);
 
 /* Função func_libera
   apaga o cadastro de um funcionario, liberando a memória alocada
