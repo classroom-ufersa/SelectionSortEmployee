@@ -57,8 +57,12 @@ int main(void){
                 int tag = 1;
                 
                 if(count_func < MAX_FUNC){
-                    funcionario[count_func] = func_cadastra(nome, cargo, documento, tag);
-                    count_func++;
+                    if(func_procura(funcionario, count_func, documento)){
+                        funcionario[count_func] = func_cadastra(nome, cargo, documento, tag);
+                        count_func++;
+                    }else{
+                        printf("Documento ja em uso!");
+                    }
                 }else{
                     printf("Maximo de funcionarios atingido!");
                 }
