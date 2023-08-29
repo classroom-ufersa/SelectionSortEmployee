@@ -115,7 +115,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
     printf("\nTempo de execucao: %.10fs\n", tempo_sort);
 }
 
-int func_leia(Funcionario **func, FILE *fl, int count)
+int func_leia(Funcionario **func, FILE *fl)
 {
 	int i = 0;
     
