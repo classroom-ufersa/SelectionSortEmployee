@@ -127,3 +127,7 @@ int func_leia(Funcionario **func, FILE *fl)
 	fclose(fl);
 	return i;
 }
+
+void func_listar(Funcionario **func){
+    
+}
