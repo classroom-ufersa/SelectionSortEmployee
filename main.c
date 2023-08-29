@@ -87,12 +87,6 @@ int main(void){
     return 0;
 }
 
-void menu(Funcionario** func, FILE* fl, int count) {
-    
-    
-
-    
-}
 
 int opcoes(void){
 
