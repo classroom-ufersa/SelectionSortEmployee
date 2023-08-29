@@ -2,6 +2,7 @@
 
 /* Dependência de módulos */
 #include <stdio.h>
+#include <stdlib>
 
 /* Tipo Exportado */
 typedef struct funcionario Funcionario;
@@ -11,7 +12,7 @@ typedef struct funcionario Funcionario;
 /* Função func_cria
   cadastra um novo arquivo funcionário, alocando memória e preenchendo os parâmetros
 */
-Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag);
+Funcionario **func_cadastra(char *nome, char *cargo, int documento, int tag);
 
 /* Função func_libera
   apaga o cadastro de um funcionario, liberando a memória alocada
@@ -32,7 +33,7 @@ void func_ordena(Funcionario **func, int count);
 /* Função func_leia
   Lê todos os dadosd do arquivo e armazena na struct
 */
-int func_leia(Funcionario **func, FILE *fl, int count);
+int func_leia(Funcionario **func, FILE *fl);
 
 /* Função func_salva
   guarda dados do tipo estruturado no arquivo
