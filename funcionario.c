@@ -20,7 +20,7 @@ Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag)
     {
         printf("Sem memória!");
         exit(1);
-    }
+    }   
     strcpy(funcionario->nome, nome);
     strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
@@ -165,9 +165,8 @@ int func_procura(Funcionario **func, int count, int documento){
     int i;
     for(i = 0; i <= count; i++){
         if(func[i]->documento == documento){
-            return 1;
-        }else{
             return 0;
         }
     }
+    return 1;
 }
