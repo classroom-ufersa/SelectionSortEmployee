@@ -54,10 +54,10 @@ int main(void){
                 printf("Digite o documento: \n");
                 scanf("%d", &documento);
                 printf("%d", count_func);
-                
+                int tag = 1;
                 
                 if(count_func < MAX_FUNC){
-                    funcionario[count_func] = func_cadastra(nome, cargo, documento);
+                    funcionario[count_func] = func_cadastra(nome, cargo, documento, tag);
                     count_func++;
                 }else{
                     printf("Maximo de funcionarios atingido!");
