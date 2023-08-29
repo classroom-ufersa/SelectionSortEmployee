@@ -43,3 +43,8 @@ void func_salva(Funcionario **func, FILE *fl, int count);
   lista tudos os funcionarios cadastrados  
 */  
 void func_listar(Funcionario **func, int count);
+
+/* Função func_procura
+  procura e retorna 1 se o documento que está sendo cadastrado ja está sendo usado, 0 caso contrario
+*/
+int func_procura(Funcionario **func, int count, int documento);
