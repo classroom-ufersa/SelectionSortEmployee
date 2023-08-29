@@ -57,11 +57,8 @@ int main(void){
                 func_listar(funcionario);
 
                 break;
-            
+    
             case 3:
-                break;
-
-            case 4:
                 char resp;
                 printf("\nEncerrando Programa...\n");
                 if (count_func > ID) {
@@ -81,7 +78,7 @@ int main(void){
                 printf("\nOpcao Invalida! Tente novamente.\n");
                 break;
         }
-    } while (opcao != 4);
+    } while (opcao != 3);
 
     func_libera(funcionario, count_func);
     fclose(dados_func);
@@ -96,8 +93,7 @@ int opcoes(void){
 
     printf("\n1 - Cadastar funcionario");
     printf("\n2 - Listar funcionarios");
-    printf("\n3 - ....");
-    printf("\n4 - Encerrar");
+    printf("\n3 - Encerrar");
     printf("\nEscolha uma opcao: ");
     scanf("%d", &opcao);
     return opcao;
