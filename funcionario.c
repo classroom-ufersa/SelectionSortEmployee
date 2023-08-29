@@ -8,10 +8,11 @@ struct funcionario
     char nome[31];
     char cargo[101];
     int documento;
+    int tag;
 };
 
 
-Funcionario *func_cadastra(char *nome, char *cargo, int documento)
+Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag)
 {
     Funcionario *funcionario = (Funcionario *)malloc(sizeof(Funcionario));
     if (funcionario == NULL)
@@ -22,6 +23,7 @@ Funcionario *func_cadastra(char *nome, char *cargo, int documento)
     strcpy(funcionario->nome, nome);
     strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
+    funcionario->tag = 1;
     return funcionario;
 }
 
@@ -90,6 +92,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
 
     int i;
     for (i = 0; i < count; i++) {
+        func[i]->tag = 0;
       fprintf(saida, "%d\t%s\t%s\t%d\n", i+1, func[i]->nome, func[i]->cargo, func[i]->documento);
     }
 
@@ -116,7 +119,7 @@ int func_leia(Funcionario **func, FILE *fl)
             int id, doc;
             
             fscanf(fl, "%d\t%[^\t]\t%[^\t]\t%d\n", &id, nome, cargo, &doc);
-            func[i] = func_cadastra(nome, cargo, doc);
+            func[i] = func_cadastra(nome, cargo, doc, 0);
             printf("%d\t%s\t%s\t%d\n", id, func[i]->nome, func[i]->cargo, func[i]->documento);
 
             i++;
