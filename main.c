@@ -54,6 +54,8 @@ int main(void){
                 break;
             case 2:
 
+                func_listar(funcionario);
+
                 break;
             
             case 3:
@@ -99,7 +101,7 @@ int opcoes(void){
     int opcao;
 
     printf("\n1 - Cadastar funcionario");
-    printf("\n2 - ....");
+    printf("\n2 - Listar funcionarios");
     printf("\n3 - ....");
     printf("\n4 - Encerrar");
     printf("\nEscolha uma opcao: ");
