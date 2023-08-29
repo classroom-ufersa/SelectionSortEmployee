@@ -128,6 +128,15 @@ int func_leia(Funcionario **func, FILE *fl)
 	return i;
 }
 
-void func_listar(Funcionario **func){
-    
+void func_listar(Funcionario **func, int count){
+    printf("Funcionarios com '*' estão sendo cadastrados na execução.");
+
+    int i;
+    for(i = 0; i <= count; i++){
+        if(/*execucao*/){
+            printf("* %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
+        }else{
+            printf("  %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
+        }
+    }
 }

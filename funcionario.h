@@ -42,4 +42,4 @@ void func_salva(Funcionario **func, FILE *fl, int count);
 /* Função func_listar 
   lista tudos os funcionarios cadastrados  
 */  
-void func_listar(Funcionario **func);
+void func_listar(Funcionario **func, int count);
