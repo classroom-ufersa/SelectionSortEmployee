@@ -133,7 +133,7 @@ void func_listar(Funcionario **func, int count){
 
     int i;
     for(i = 0; i <= count; i++){
-        if(/*execucao*/){
+        if(/*execucao*/count > 1){
             printf("* %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
         }else{
             printf("  %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
