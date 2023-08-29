@@ -142,3 +142,28 @@ int func_leia(Funcionario **func, FILE *fl)
 	fclose(fl);
 	return i;
 }
+
+void func_listar(Funcionario **func, int count){
+    printf("Funcionarios com '*' estão sendo cadastrados na execução.");
+
+    int i;
+    for(i = 0; i <= count; i++){
+        if(/*execucao*/count > 1){
+            printf("* %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
+        }else{
+            printf("  %s %s %d", func[i]->nome, func[i]->cargo, func[i]->documento);
+        }
+    }
+}
+
+int func_procura(Funcionario **func, int count, int documento){
+
+    int i;
+    for(i = 0; i <= count; i++){
+        if(func[i]->documento == documento){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+}

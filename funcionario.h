@@ -30,10 +30,21 @@ int func_compara(char *nome1, char *nome2);
 void func_ordena(Funcionario **func, int count);
 
 /* Função func_leia
- */
+  Lê todos os dadosd do arquivo e armazena na struct
+*/
 int func_leia(Funcionario **func, FILE *fl);
 
 /* Função func_salva
   guarda dados do tipo estruturado no arquivo
 */
 void func_salva(Funcionario **func, FILE *fl, int count);
+
+/* Função func_listar 
+  lista tudos os funcionarios cadastrados  
+*/  
+void func_listar(Funcionario **func, int count);
+
+/* Função func_procura
+  procura e retorna 1 se o documento que está sendo cadastrado ja está sendo usado, 0 caso contrario
+*/
+int func_procura(Funcionario **func, int count, int documento);
