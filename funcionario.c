@@ -20,7 +20,7 @@ Funcionario *func_cadastra(char *nome, char *cargo, int documento, int tag)
     {
         printf("Sem memória!");
         exit(1);
-    }
+    }   
     strcpy(funcionario->nome, nome);
     strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
@@ -115,7 +115,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
     printf("\nTempo de execucao: %.10fs\n", tempo_sort);
 }
 
-int func_leia(Funcionario **func, FILE *fl)
+int func_leia(Funcionario **func, FILE *fl, int count)
 {
 	int i = 0;
     
