@@ -37,3 +37,5 @@ int func_leia(Funcionario **func, FILE *fl);
   guarda dados do tipo estruturado no arquivo
 */
 void func_salva(Funcionario **func, FILE *fl, int count);
+
+void func_listar(Funcionario **func);
