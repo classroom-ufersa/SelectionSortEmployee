@@ -1,7 +1,0 @@
-1,ABRAAO,filho de Deus,89643
-2,ANTONIO,Cantor,8971243
-3,ARTHUR,Pedreiro,12786
-4,CAIO GOMES,comediante,90712
-5,MARCOS,Comediante,129863
-6,QUAIO MADURO,Fazendeiro,987123
-7,ZIRALDO,Cartunista,87612

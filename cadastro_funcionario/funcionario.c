@@ -4,7 +4,7 @@
 #include <time.h>
 #include "funcionario.h"
 
-struct funcionario
+struct funcionario 
 {
     int tag;
     char nome[31];
@@ -45,6 +45,12 @@ int func_compara(char *nome1, char *nome2)
 
 void func_ordena(Funcionario **func, int count)
 {
+
+    // =============================
+    // tempo inicio do cadastro:
+    clock_t inicio = clock();
+    // =============================
+
     int i, primeiroID, j;
     Funcionario *valor_teste;
 
@@ -78,6 +84,12 @@ void func_ordena(Funcionario **func, int count)
             func[primeiroID] = valor_teste;
         }
     }
+
+    // tempo da execução do Selection Sort:
+    double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
+    // tempo_sort = tempo_sort; //milisegundos
+    printf("\nTempo de execucao: %.50fs\n", tempo_sort);
+    // =============================
 }
 
 void func_salva(Funcionario **func, FILE *fl, int count)
@@ -103,12 +115,13 @@ void func_salva(Funcionario **func, FILE *fl, int count)
     // tempo_sort = tempo_sort; //milisegundos
 
     // // =============================
+    fprintf(saida, "%d\n", count);
 
     int i;
     for (i = 0; i < count; i++)
     {
         func[i]->tag = 0;
-        fprintf(saida, "%d,%s,%s,%d\n", i + 1, func[i]->nome, func[i]->cargo, func[i]->documento);
+        fprintf(saida, "%d\t%s\t%s\t%ld\n", i + 1, func[i]->nome, func[i]->cargo, func[i]->documento);
     }
 
     fclose(saida);
@@ -118,7 +131,7 @@ void func_salva(Funcionario **func, FILE *fl, int count)
 
 int func_leia(Funcionario **func, FILE *fl)
 {
-    int i = 0;
+    int count = 0;
 
     /* função retorna o índice que devemos iniciar
     no cadastro de novos funcionários. Portanto,
@@ -129,22 +142,22 @@ int func_leia(Funcionario **func, FILE *fl)
     if (ftell(fl) != 0)
     {
         fseek(fl, 0, SEEK_SET);
-        while (!feof(fl))
-        {
-            int id;
-            char nome[31], cargo[101];
-            long int doc;
+        int id;
+        char nome[31], cargo[101];
+        long int doc;
+        fscanf(fl, "%d\n", &count);
 
-            fscanf(fl, "%d,%[^,],%[^,],%ld\n", &id, nome, cargo, &doc);
+        int i;
+        for (i = 0; i < count; i++)
+        {
+            fscanf(fl, "%d\t%[^\t]\t%[^\t]\t%ld\n", &id, nome, cargo, &doc);
             func[i] = func_cadastra(0, nome, cargo, doc);
             // printf("%d\t%d\t%s\t%s\t%ld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
-
-            i++;
         }
     }
 
     fclose(fl);
-    return i;
+    return count;
 }
 
 void func_listar(Funcionario **func, int count)
@@ -179,25 +192,72 @@ int func_procura(Funcionario **func, int count, long int documento)
     return 1;
 }
 
-void func_importa(Funcionario **func){
-    FILE *entrada;
-    int i = 0;
-    entrada = fopen("funcionarios.txt", "rt");
+int func_importa(Funcionario **func, int count, int max)
+{
+    int count_import = 0;
+    char nome_arquivo[31];
+    
+    printf("\nInforme o nome do arquivo onde se encontra os dados para importacao: ");
+    scanf(" %30[^\n]", nome_arquivo);
+    fflush(stdin);
+    strcat(nome_arquivo, ".txt");
+    
+    FILE *entrada = fopen(nome_arquivo, "rt");
     if (entrada == NULL)
     {
-        printf("Não foi possivel abrir o arquivo de entrada.\n");
+        printf("Nao foi possivel abrir o arquivo de entrada.\n");
         exit(1);
     }
-     while (!feof(entrada))
+
+    // verifica se o arquivo está vazio:
+    fseek(entrada, 0, SEEK_END);
+    if (ftell(entrada) != 0)
+    {
+        fseek(entrada, 0, SEEK_SET);
+        int id;
+        char nome[31], cargo[101];
+        long int doc;
+        int repetidos = 0;
+
+        fscanf(entrada, "%d\n", &count_import);
+        int i;
+        if ((count+count_import) < max)
         {
-            int id;
-            char nome[31], cargo[101];
-            long int doc;
+            for (i = 0; i < count_import; i++)
+            {
+                fscanf(entrada, "%d\t%[^\t]\t%[^\t]\t%ld\n", &id, nome, cargo, &doc);
+                
+                // if (func_procura(func, count, doc))
+                // {
+                func[count] = func_cadastra(1, nome, cargo, doc);
+                count++;
+                // } else 
+                // {
+                repetidos++;
 
-            fscanf(entrada, "%d,%[^,],%[^,],%ld\n", &id, nome, cargo, &doc);
-            func[i] = func_cadastra(0, nome, cargo, doc);
-            // printf("%d\t%d\t%s\t%s\t%ld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
+                // }
+                // func_ordena(func, count);
+            }
 
-            i++;
+            if (repetidos != 0) 
+            {
+                printf("\nFoi encontrado %d documentos ja registrados!", repetidos);
+                printf("\n%d cadastros foram importados!\n", (count_import - repetidos));
+            } else
+            {
+                printf("\nTodos os dados foram importados!");
+            }
+        } else
+        {
+            printf("\nA quantidade importada excede o limite de cadastro!\n");
         }
+        
+
+        // printf("%d\t%d\t%s\t%s\t%ld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
+        printf("\nDados importados!\n");
+    } else {
+        printf("\nO arquivo selecionado esta vazio!\n");
+    }
+
+    return count;
 }
