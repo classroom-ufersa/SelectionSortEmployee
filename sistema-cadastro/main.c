@@ -103,21 +103,20 @@ int main(void) {
 }
 
 char opcoes(void) {
-    char opcao[10];
+    char opcao[3];
 
     printf("\n1 - Cadastar funcionario");
     printf("\n2 - Listar funcionarios");
     printf("\n3 - Importar funcionarios");
     printf("\n4 - Encerrar");
     printf("\nEscolha uma opcao: ");
-    scanf(" %9[^\n]", opcao);
+    scanf(" %2[^\n]", opcao);
     fflush(stdin);
     int len = strlen(opcao);
     if(len == 1){
         return opcao[0];
-    }if(len >= 9){
+    }if(len >= 2){
         printf("\nLimite de caracter atingido!\n");
-        return 0;
     }
     return 0;
 }
