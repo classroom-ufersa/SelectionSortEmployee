@@ -13,7 +13,7 @@ O projeto de ordenação de strings emprega o algoritmo Selection Sort por meio 
     for (i = 0; i < count; i++)
     {
 
-        valor_teste = func[i]; // reserva o valor do índice testado
+        valor_teste = func[i]; 
 
         primeiroID = i;
         for (j = i + 1; j < count; j++)
