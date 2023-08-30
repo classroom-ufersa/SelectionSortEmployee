@@ -49,5 +49,7 @@ void func_listar(Funcionario **func, int count);
 */
 int func_procura(Funcionario **func, int count, long int documento);
 
-
+/* Função importa
+  lê um arquivo existente e importa os dados para a struct funcionarios
+*/
 void func_importa(Funcionario **func);
