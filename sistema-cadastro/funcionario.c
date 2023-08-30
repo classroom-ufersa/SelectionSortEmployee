@@ -165,16 +165,20 @@ void func_listar(Funcionario **func, int count)
     printf("\n'*' -> Funcionarios que estao sendo cadastrados na execucao.\n");
 
     int i;
-    for (i = 0; i < count; i++)
-    {
-        if (func[i]->tag == 1)
+    if(func != NULL){
+        for (i = 0; i < count; i++)
         {
-            printf("*\t%-30s\t%-40s\t%ld\n", func[i]->nome, func[i]->cargo, func[i]->documento);
+            if (func[i]->tag == 1)
+            {
+                printf("*\t%-30s\t%-40s\t%ld\n", func[i]->nome, func[i]->cargo, func[i]->documento);
+            }
+            else
+            {
+                printf("\t%-30s\t%-40s\t%ld\n", func[i]->nome, func[i]->cargo, func[i]->documento);
+            }
         }
-        else
-        {
-            printf("\t%-30s\t%-40s\t%ld\n", func[i]->nome, func[i]->cargo, func[i]->documento);
-        }
+    }else{
+        printf("\nNenhum funcionario cadastrado!");
     }
 }
 
