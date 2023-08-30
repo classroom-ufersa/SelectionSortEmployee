@@ -8,11 +8,11 @@
 
 #define MAX_FUNC 10000
 
-int opcoes(void);
+char opcoes(void);
 
 int main(void) { 
     int count_func, ID;
-    int opcao;
+    char opcao;
 
     int documento;
     char nome[31], cargo[41];
@@ -36,7 +36,7 @@ int main(void) {
         opcao = opcoes();
 
         switch (opcao) {
-            case 1:  
+            case '1':  
                 printf("Digite o nome: ");
                 scanf(" %30[^\n]", nome);
                 fflush(stdin);
@@ -63,16 +63,16 @@ int main(void) {
                 
                 break;
 
-            case 2:
+            case '2':
                 func_listar(funcionario, count_func);
                 break;
 
-            case 3:
+            case '3':
                 count_func = func_importa(funcionario, count_func, MAX_FUNC);
                 // func_ordena(funcionario, count_func);
                 break;
     
-            case 4:
+            case '4':
                 char resp;
                 int novos = count_func - ID;
                 
@@ -94,7 +94,7 @@ int main(void) {
                 printf("\nOpcao Invalida! Tente novamente.\n");
                 break;
         }
-    } while (opcao != 4);
+    } while (opcao != '4');
 
     func_libera(funcionario, count_func);
     fclose(dados_func);
@@ -102,15 +102,19 @@ int main(void) {
     return 0;
 }
 
-int opcoes(void) {
-    int opcao;
+char opcoes(void) {
+    char opcao[10];
 
     printf("\n1 - Cadastar funcionario");
     printf("\n2 - Listar funcionarios");
     printf("\n3 - Importar funcionarios");
     printf("\n4 - Encerrar");
     printf("\nEscolha uma opcao: ");
-    scanf("%d", &opcao);
+    scanf(" %[^\n]", opcao);
     fflush(stdin);
-    return opcao;
+    int len = strlen(opcao);
+    if(len == 1){
+        return opcao[0];
+    }
+    return 0;
 }
