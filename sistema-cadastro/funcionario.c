@@ -165,7 +165,7 @@ void func_listar(Funcionario **func, int count)
     printf("\n'*' -> Funcionarios que estao sendo cadastrados na execucao.\n");
 
     int i;
-    if(func != NULL){
+    if(func != NULL && count != 0){
         for (i = 0; i < count; i++)
         {
             if (func[i]->tag == 1)
