@@ -220,6 +220,7 @@ int func_importa(Funcionario **func, int count, int max)
         int repetidos = 0;
 
         fscanf(entrada, "%d\n", &count_import);
+        printf("%d", count_import);
         int i;
         if ((count+count_import) < max)
         {
@@ -227,26 +228,32 @@ int func_importa(Funcionario **func, int count, int max)
             {
                 fscanf(entrada, "%d\t%[^\t]\t%[^\t]\t%ld\n", &id, nome, cargo, &doc);
                 
-                // if (func_procura(func, count, doc))
-                // {
-                func[count] = func_cadastra(1, nome, cargo, doc);
-                count++;
-                // } else 
-                // {
-                repetidos++;
-
-                // }
-                // func_ordena(func, count);
+                if (func_procura(func, count, doc))
+                {
+                    func[count] = func_cadastra(1, nome, cargo, doc);
+                    count++;
+                } else 
+                {
+                    repetidos++;
+                }
             }
 
-            if (repetidos != 0) 
+            if (repetidos != count_import)
             {
-                printf("\nFoi encontrado %d documentos ja registrados!", repetidos);
-                printf("\n%d cadastros foram importados!\n", (count_import - repetidos));
+                if (repetidos != 0) 
+                {
+                    printf("\nFoi encontrado %d documentos ja registrados!", repetidos);
+                    printf("\n%d cadastros foram importados!\n", (count_import - repetidos));
+                } else
+                {
+                    printf("\nTodos os dados foram importados!");
+                }
+                func_ordena(func, count);
             } else
             {
-                printf("\nTodos os dados foram importados!");
+                printf("\nTodos os dados importados ja estao cadastrados\n");
             }
+
         } else
         {
             printf("\nA quantidade importada excede o limite de cadastro!\n");
@@ -254,7 +261,7 @@ int func_importa(Funcionario **func, int count, int max)
         
 
         // printf("%d\t%d\t%s\t%s\t%ld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
-        printf("\nDados importados!\n");
+        // printf("\nDados importados!\n");
     } else {
         printf("\nO arquivo selecionado esta vazio!\n");
     }
