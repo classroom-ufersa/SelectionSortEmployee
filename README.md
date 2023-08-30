@@ -10,20 +10,11 @@ O projeto de ordenação de strings emprega o algoritmo Selection Sort por meio 
     int i, primeiroID, j;
     Funcionario *valor_teste;
 
-    /*
-      a função irá buscar pelo elemento que deve vir primeiro,
-      e posicioná-lo no índice atual, desconsiderando os índices
-      anteriores, com os elementos já ordenados:
-    */
     for (i = 0; i < count; i++)
     {
 
         valor_teste = func[i]; // reserva o valor do índice testado
 
-        /*
-          a busca vai guardar apenas o índice do funcionario que
-          vem primeiro, seguindo a ordem alfabética:
-        */
         primeiroID = i;
         for (j = i + 1; j < count; j++)
         {
@@ -33,7 +24,6 @@ O projeto de ordenação de strings emprega o algoritmo Selection Sort por meio 
             }
         }
 
-        // traz o funcionário para o índice correto, caso ele já não esteja:
         if (primeiroID != i)
         {
             func[i] = func[primeiroID];
