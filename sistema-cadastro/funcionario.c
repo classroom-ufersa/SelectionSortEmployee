@@ -177,8 +177,9 @@ void func_listar(Funcionario **func, int count)
                 printf("\t%-30s\t%-40s\t%ld\n", func[i]->nome, func[i]->cargo, func[i]->documento);
             }
         }
-    }else{
-        printf("\nNenhum funcionario cadastrado!");
+    } else
+    {
+        printf("\nNenhum funcionario cadastrado!\n");
     }
 }
 
