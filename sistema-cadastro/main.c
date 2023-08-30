@@ -115,8 +115,9 @@ char opcoes(void) {
     int len = strlen(opcao);
     if(len == 1){
         return opcao[0];
-    }if(len > 9){
+    }if(len >= 9){
         printf("\nLimite de caracter atingido!\n");
+        return 0;
     }
     return 0;
 }
