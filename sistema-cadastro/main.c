@@ -110,7 +110,7 @@ char opcoes(void) {
     printf("\n3 - Importar funcionarios");
     printf("\n4 - Encerrar");
     printf("\nEscolha uma opcao: ");
-    scanf(" %[^\n]", opcao);
+    scanf(" %9[^\n]", opcao);
     fflush(stdin);
     int len = strlen(opcao);
     if(len == 1){
