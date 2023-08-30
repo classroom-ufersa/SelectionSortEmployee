@@ -178,3 +178,26 @@ int func_procura(Funcionario **func, int count, long int documento)
     }
     return 1;
 }
+
+void func_importa(Funcionario **func){
+    FILE *entrada;
+    int i = 0;
+    entrada = fopen("funcionarios.txt", "rt");
+    if (entrada == NULL)
+    {
+        printf("Não foi possivel abrir o arquivo de entrada.\n");
+        exit(1);
+    }
+     while (!feof(entrada))
+        {
+            int id;
+            char nome[31], cargo[101];
+            long int doc;
+
+            fscanf(entrada, "%d,%[^,],%[^,],%ld\n", &id, nome, cargo, &doc);
+            func[i] = func_cadastra(0, nome, cargo, doc);
+            // printf("%d\t%d\t%s\t%s\t%ld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
+
+            i++;
+        }
+}

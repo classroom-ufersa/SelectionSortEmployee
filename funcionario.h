@@ -40,7 +40,7 @@ int func_leia(Funcionario **func, FILE *fl);
 void func_salva(Funcionario **func, FILE *fl, int count);
 
 /* Função func_listar 
-  lista tudos os funcionarios cadastrados  
+  lista todos os funcionarios cadastrados  
 */  
 void func_listar(Funcionario **func, int count);
 
@@ -48,3 +48,6 @@ void func_listar(Funcionario **func, int count);
   procura e retorna 1 se o documento que está sendo cadastrado ja está sendo usado, 0 caso contrario
 */
 int func_procura(Funcionario **func, int count, long int documento);
+
+
+void func_importa(Funcionario **func);
