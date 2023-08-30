@@ -6,7 +6,7 @@
 #include "funcionario.h"
 
 
-#define MAX_FUNC 1000
+#define MAX_FUNC 10000
 
 int opcoes(void);
 
@@ -25,20 +25,9 @@ int main(void) {
         exit(1);
 	}
 
-    // =============================
-    // tempo inicio do cadastro:
-    clock_t inicio = clock();
-
 
     // ID armazena quantidade inicial de funcionários, para comparação futura:
     ID = func_leia(funcionario, dados_func);
-    
-    // tempo da execução do Selection Sort:
-    double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
-    // tempo_sort = tempo_sort; //milisegundos
-    // =============================
-    printf("\nTempo de execucao: %.50fs\n", tempo_sort);
-
     
     // count_func irá ser usado como indice do vetor de ponteiros:
     count_func = ID;
@@ -80,7 +69,7 @@ int main(void) {
 
             case 3:
                 count_func = func_importa(funcionario, count_func, MAX_FUNC);
-                func_ordena(funcionario, count_func);
+                // func_ordena(funcionario, count_func);
                 break;
     
             case 4:
