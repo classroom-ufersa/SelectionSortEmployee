@@ -77,6 +77,6 @@ $$T(n) = O(a + b*(n-1) + c*(n^2-n))$$
 $$T(n) = O(n^2)$$
 
 ## Exemplificando o funcionamento do Selection Sort 
-<div style="margin:center; width: 100%">
+<p align="center">
  <img src="selection-sort-animation.gif"/>
-</div>
+</p>
