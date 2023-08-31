@@ -29,7 +29,11 @@ Funcionario *func_cadastra(int tag, char *nome, char *cargo, long long documento
         exit(1);
     }
     strcpy(funcionario->nome, strupr(nome));
+<<<<<<< HEAD
     strcpy(funcionario->cargo, strupr(cargo));
+=======
+    strcpy(funcionario->cargo, cargo);
+>>>>>>> d77ddbf83c06c7e1f2b830b45a33c4e53aad098a
     funcionario->documento = documento;
     funcionario->tag = tag;
 
@@ -240,6 +244,10 @@ int func_importa(Funcionario **func, int count, int max)
         int repetidos = 0;
 
         fscanf(entrada, "%d\n", &count_import);
+<<<<<<< HEAD
+=======
+        // printf("%d", count_import);
+>>>>>>> d77ddbf83c06c7e1f2b830b45a33c4e53aad098a
         int i;
         if ((count+count_import) < max)
         {
@@ -277,7 +285,14 @@ int func_importa(Funcionario **func, int count, int max)
         {
             printf(TXT_red"\nA quantidade importada excede o limite de cadastro!\n"TXT_reset);
         }
+<<<<<<< HEAD
   
+=======
+        
+
+        // printf("%d\t%d\t%s\t%s\t%lld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
+        // printf("\nDados importados!\n");
+>>>>>>> d77ddbf83c06c7e1f2b830b45a33c4e53aad098a
     } else {
         printf(TXT_yellow"\nO arquivo selecionado esta vazio!\n"TXT_reset);
     }
