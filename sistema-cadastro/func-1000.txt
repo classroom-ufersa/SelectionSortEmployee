@@ -1,5 +1,5 @@
 1000			
-1	Maria	 MÈdico	00500503013
+1	Maria	 M√©dico	00500503013
 2	Giuseppe	 Professor	33937268998
 3	Anna	 Engenheiro	35300202757
 4	Giovanni	 Advogado	66970642236
@@ -10,7 +10,7 @@
 9	Mario	 Policial	25043892348
 10	Rosa	 Bombeiro	05988131247
 11	Salvatore	 Dentista	46144263604
-12	Angela	 PsicÛlogo	19865135841
+12	Angela	 Psic√≥logo	19865135841
 13	Vincenzo	 Arquiteto	53849701520
 14	Roberto	 Eletricista	06351468149
 15	Paolo	 Jornalista	05514333440
@@ -19,38 +19,38 @@
 18	Marco	 Ator	04007183697
 19	Angelo	 Cantor	85976690749
 20	Francesca	 Agricultor	29110318543
-21	Domenico	 FotÛgrafo	71858844359
+21	Domenico	 Fot√≥grafo	71858844359
 22	Paola	 Fisioterapeuta	29202305123
 23	Pietro	 Nutricionista	03451583397
 24	Michele	 Economista	30321980321
-25	Lucia	 AstrÙnomo	20579297282
-26	Franco	 BiÛlogo	19492640327
-27	Alessandro	 QuÌmico	28139350702
-28	Carlo	 GeÛlogo	15696881286
+25	Lucia	 Astr√¥nomo	20579297282
+26	Franco	 Bi√≥logo	19492640327
+27	Alessandro	 Qu√≠mico	28139350702
+28	Carlo	 Ge√≥logo	15696881286
 29	Stefano	 Tradutor	42330006649
 30	Laura	 Motorista	17859530452
 31	Carmela	 Pedreiro	43897865871
 32	Teresa	 Pintor	06480221076
-33	Massimo	 Mec‚nico	74798873428
+33	Massimo	 Mec√¢nico	74798873428
 34	Daniela	 Vendedor	09819597643
 35	Nicola	 Terapeuta	73915305973
 36	Giorgio	 Psiquiatra	70500802454
 37	Bruno	 Consultor	51588678092
-38	Rita	 Veterin·rio	60879926246
-39	Maurizio	 GeÛgrafo	66643802346
+38	Rita	 Veterin√°rio	60879926246
+39	Maurizio	 Ge√≥grafo	66643802346
 40	Caterina	 Cientista	88678300592
 41	Elena	 Cozinheiro	34971851814
 42	Luciano	 Padeiro	87925569356
 43	Alberto	 Barbeiro	15860211896
 44	Patrizia	 Cabeleireiro	60250422806
 45	Luca	 Escultor	21130829087
-46	Antonietta	 DanÁarino	50605889569
+46	Antonietta	 Dan√ßarino	50605889569
 47	Pasquale	 Economista	93242317007
 48	Carla	 Estilista	26756753719
 49	Mauro	 Esteticista	44321477291
 50	Sergio	 Florista	77043338123
-51	Fabio	 FonoaudiÛlogo	99819799661
-52	Antonella	 GarÁom	94612321176
+51	Fabio	 Fonoaudi√≥logo	99819799661
+52	Antonella	 Gar√ßom	94612321176
 53	Claudio	 Historiador	43734417847
 54	Giuseppa	 Hoteleiro	89161466086
 55	Enrico	 Ilustrador	70627676322
@@ -59,33 +59,33 @@
 58	Antonino	 Lavador de carros	30905695026
 59	Antonia	 Marceneiro	70405692930
 60	Raffaele	 Maquiador	85348991936
-61	Giancarlo	 Mec‚nico	18907707016
-62	Silvana	 Metal˙rgico	11964161791
+61	Giancarlo	 Mec√¢nico	18907707016
+62	Silvana	 Metal√∫rgico	11964161791
 63	Alessandra	 Nutricionista	94964840759
-64	Cristina	 OceanÛgrafo	90366926362
+64	Cristina	 Ocean√≥grafo	90366926362
 65	Stefania	 Ortopedista	00133591626
-66	Gabriella	 PaleontÛlogo	76577647168
+66	Gabriella	 Paleont√≥logo	76577647168
 67	Simone	 Pescador	25150194313
 68	Daniele	 Piloto	28542409382
 69	Roberta	 Porteiro	64096199125
 70	Vittorio	 Psicoterapeuta	56756986245
-71	Aldo	 Quiropr·tico	27044015789
-72	Lorenzo	 RepÛrter	24954394433
+71	Aldo	 Quiropr√°tico	27044015789
+72	Lorenzo	 Rep√≥rter	24954394433
 73	Renato	 Salva-vidas	00168442114
-74	M·ria	 Sapateiro	31659658764
+74	M√°ria	 Sapateiro	31659658764
 75	Barbara	 Soldador	44790827433
 76	Monica	 Taxista	00439884810
-77	Gaetano	 TÈcnico em inform·tica	93360188255
-78	AntÛnio	 TÈcnico em radiologia	19310753965
-79	Grazia	 TÈcnico em enfermagem	89529500691
-80	Luisa	 TÈcnico em eletrÙnica	20670348493
-81	Elisabetta	 TÈcnico em mec‚nica	32465769136
-82	Margherita	 TÈcnico em seguranÁa do trabalho	43146606427
-83	Fabrizio	 TÈcnico em telecomunicaÁıes	22765085780
-84	Davide	 TÈcnico em turismo	89666119678
+77	Gaetano	 T√©cnico em inform√°tica	93360188255
+78	Ant√≥nio	 T√©cnico em radiologia	19310753965
+79	Grazia	 T√©cnico em enfermagem	89529500691
+80	Luisa	 T√©cnico em eletr√¥nica	20670348493
+81	Elisabetta	 T√©cnico em mec√¢nica	32465769136
+82	Margherita	 T√©cnico em seguran√ßa do trabalho	43146606427
+83	Fabrizio	 T√©cnico em telecomunica√ß√µes	22765085780
+84	Davide	 T√©cnico em turismo	89666119678
 85	Gianfranco	 Terapeuta ocupacional	86253424638
 86	Luciana	 Tesoureiro	65646496498
-87	Filomena	 TopÛgrafo	51070572148
+87	Filomena	 Top√≥grafo	51070572148
 88	Marisa	 Tradutor	92993354933
 89	Vito	 Urologista	79407968395
 90	Riccardo	 Urologista	73447985328
@@ -93,13 +93,13 @@
 92	Silvia	 Vidraceiro	07160014178
 93	Vincenza	 Vigia	52377263287
 94	Rosaria	 Web designer	93772695571
-95	Rosanna	 XilÛgrafo	03421650986
+95	Rosanna	 Xil√≥grafo	03421650986
 96	Chiara	 Yogaterapeuta	09454738221
 97	Giuliana	 Zelador	31584263907
-98	Marina	 ZoÛlogo	02198739491
+98	Marina	 Zo√≥logo	02198739491
 99	Bruna	Fazendeiro	48593289204
 100	Giacomo	Cartunista	54469721912
-101	Filippo	 MÈdico	98038853887
+101	Filippo	 M√©dico	98038853887
 102	Gianni	 Professor	88030581996
 103	Gabriele	 Engenheiro	28648262870
 104	Guido	 Advogado	26981504890
@@ -110,7 +110,7 @@
 109	Umberto	 Policial	77771116916
 110	Domenica	 Bombeiro	18393654776
 111	Tiziana	 Dentista	68902465474
-112	Carmine	 PsicÛlogo	40180238548
+112	Carmine	 Psic√≥logo	40180238548
 113	Marcello	 Arquiteto	07448085851
 114	Assunta	 Eletricista	44606413400
 115	Simona	 Jornalista	77895090004
@@ -119,38 +119,38 @@
 118	Carmelo	 Ator	65324779191
 119	Valentina	 Cantor	35551516243
 120	Rocco	 Agricultor	40712773468
-121	Leonardo	 FotÛgrafo	26658804626
+121	Leonardo	 Fot√≥grafo	26658804626
 122	Annamaria	 Fisioterapeuta	96596988911
 123	Giuliano	 Nutricionista	60057101178
 124	Gino	 Economista	36099906138
-125	Cinzia	 AstrÙnomo	82258218878
-126	Piero	 BiÛlogo	31938691465
-127	Dario	 QuÌmico	36325660451
-128	Alfredo	 GeÛlogo	34601951617
+125	Cinzia	 Astr√¥nomo	82258218878
+126	Piero	 Bi√≥logo	31938691465
+127	Dario	 Qu√≠mico	36325660451
+128	Alfredo	 Ge√≥logo	34601951617
 129	Gianluca	 Tradutor	28174097481
 130	Claudia	 Motorista	30033379996
 131	Giulio	 Pedreiro	47252939803
 132	Renzo	 Pintor	30431640326
-133	Emanuela	 Mec‚nico	39291462716
+133	Emanuela	 Mec√¢nico	39291462716
 134	Michela	 Vendedor	22822826886
 135	Adriano	 Terapeuta	75706843831
 136	Sara	 Psiquiatra	49701009996
 137	Massimiliano	 Consultor	44410771760
-138	Rosario	 Veterin·rio	10976936129
-139	Silvano	 GeÛgrafo	01139700422
+138	Rosario	 Veterin√°rio	10976936129
+139	Silvano	 Ge√≥grafo	01139700422
 140	Federico	 Cientista	46510488305
 141	Gian	 Cozinheiro	73794595882
 142	Nadia	 Padeiro	72720747945
 143	Gennaro	 Barbeiro	18446910798
 144	Liliana	 Cabeleireiro	55000181893
 145	Cosimo	 Escultor	15346640014
-146	Loredana	 DanÁarino	04375559955
+146	Loredana	 Dan√ßarino	04375559955
 147	Armando	 Economista	75810284857
 148	Emanuele	 Estilista	76130445152
 149	Cesare	 Esteticista	87668322222
 150	Federica	 Florista	09273777463
-151	Tommaso	 FonoaudiÛlogo	59794912339
-152	Raffaella	 GarÁom	89739590287
+151	Tommaso	 Fonoaudi√≥logo	59794912339
+152	Raffaella	 Gar√ßom	89739590287
 153	Ida	 Historiador	92675330265
 154	Manuela	 Hoteleiro	37567708875
 155	Mirella	 Ilustrador	13288867213
@@ -159,33 +159,33 @@
 158	Sebastiano	 Lavador de carros	30437660532
 159	Lidia	 Marceneiro	35298800569
 160	Maddalena	 Maquiador	96079675584
-161	Cl·udio	 Mec‚nico	86209649822
-162	Lina	 Metal˙rgico	35895562308
+161	Cl√°udio	 Mec√¢nico	86209649822
+162	Lina	 Metal√∫rgico	35895562308
 163	Ciro	 Nutricionista	33436311892
-164	Alfonso	 OceanÛgrafo	54157222062
-165	SÌlvia	 Ortopedista	75440954768
-166	Sandro	 PaleontÛlogo	34819533966
+164	Alfonso	 Ocean√≥grafo	54157222062
+165	S√≠lvia	 Ortopedista	75440954768
+166	Sandro	 Paleont√≥logo	34819533966
 167	Sabrina	 Pescador	59506908426
 168	Donatella	 Piloto	25641782953
 169	Walter	 Porteiro	34497921770
 170	Emilia	 Psicoterapeuta	90335982427
-171	Antonina	 Quiropr·tico	52858706614
-172	Sonia	 RepÛrter	50508703514
+171	Antonina	 Quiropr√°tico	52858706614
+172	Sonia	 Rep√≥rter	50508703514
 173	Vittoria	 Salva-vidas	31694957341
 174	Annunziata	 Sapateiro	57922220776
 175	Elio	 Soldador	41005875263
 176	Dino	 Taxista	93163159046
-177	Agostino	 TÈcnico em inform·tica	84206199118
-178	Pier	 TÈcnico em radiologia	55545337165
-179	Danilo	 TÈcnico em enfermagem	78175091045
-180	Angelina	 TÈcnico em eletrÙnica	67800314758
-181	Sandra	 TÈcnico em mec‚nica	16787403131
-182	Nicoletta	 TÈcnico em seguranÁa do trabalho	52408078757
-183	Marta	 TÈcnico em telecomunicaÁıes	59194785745
-184	Felice	 TÈcnico em turismo	09291731382
+177	Agostino	 T√©cnico em inform√°tica	84206199118
+178	Pier	 T√©cnico em radiologia	55545337165
+179	Danilo	 T√©cnico em enfermagem	78175091045
+180	Angelina	 T√©cnico em eletr√¥nica	67800314758
+181	Sandra	 T√©cnico em mec√¢nica	16787403131
+182	Nicoletta	 T√©cnico em seguran√ßa do trabalho	52408078757
+183	Marta	 T√©cnico em telecomunica√ß√µes	59194785745
+184	Felice	 T√©cnico em turismo	09291731382
 185	Eleonora	 Terapeuta ocupacional	19726681139
 186	Fernando	 Tesoureiro	19970134916
-187	Isabella	 TopÛgrafo	89499889976
+187	Isabella	 Top√≥grafo	89499889976
 188	Renata	 Tradutor	68181037139
 189	Ugo	 Urologista	51142642403
 190	Corrado	 Urologista	35778747778
@@ -193,12 +193,12 @@
 192	Pierina	 Vidraceiro	97407403899
 193	Clara	 Vigia	91116820002
 194	Rosalia	 Web designer	98431905242
-195	Lino	 XilÛgrafo	49175224970
+195	Lino	 Xil√≥grafo	49175224970
 196	Ivana	 Yogaterapeuta	55949525495
 197	Gerardo	 Zelador	37729923468
-198	Marianna	 ZoÛlogo	75661742357
+198	Marianna	 Zo√≥logo	75661742357
 199	Ornella	Fazendeiro	45853334652
-200	Alessio	 MÈdico	89049338084
+200	Alessio	 M√©dico	89049338084
 201	Silvio	 Professor	65773695672
 202	Fausto	 Engenheiro	31099004514
 203	Adele	 Advogado	47908272838
@@ -209,7 +209,7 @@
 208	Romano	 Policial	47750966184
 209	Ferdinando	 Bombeiro	20344502098
 210	Eugenio	 Dentista	71435581801
-211	Enrica	 PsicÛlogo	40407902520
+211	Enrica	 Psic√≥logo	40407902520
 212	Marcella	 Arquiteto	96808268358
 213	Diego	 Eletricista	30981504208
 214	Immacolata	 Jornalista	66381783820
@@ -218,38 +218,38 @@
 217	Gina	 Ator	07932399812
 218	Attilio	 Cantor	25427279450
 219	Valeria	 Agricultor	10676627550
-220	Mara	 FotÛgrafo	44235085524
+220	Mara	 Fot√≥grafo	44235085524
 221	Marino	 Fisioterapeuta	60042565893
 222	Agnese	 Nutricionista	72549406566
 223	Elvira	 Economista	22964709463
-224	SÈrgio	 AstrÙnomo	20839050683
-225	Luigina	 BiÛlogo	33762114446
-226	Biagio	 QuÌmico	12351408583
-227	Ezio	 GeÛlogo	74286806585
+224	S√©rgio	 Astr√¥nomo	20839050683
+225	Luigina	 Bi√≥logo	33762114446
+226	Biagio	 Qu√≠mico	12351408583
+227	Ezio	 Ge√≥logo	74286806585
 228	Saverio	 Tradutor	62627735508
 229	Piera	 Motorista	84163633842
 230	Ilaria	 Pedreiro	35444166905
 231	Graziano	 Pintor	15259445543
-232	Pasqualina	 Mec‚nico	84756864260
+232	Pasqualina	 Mec√¢nico	84756864260
 233	Bianca	 Vendedor	71866073370
-234	Cla˙dia	 Terapeuta	78594992755
+234	Cla√∫dia	 Terapeuta	78594992755
 235	Calogero	 Psiquiatra	30954793482
 236	Ada	 Consultor	13340928965
-237	Augusto	 Veterin·rio	67038756533
-238	Ettore	 GeÛgrafo	57512575644
+237	Augusto	 Veterin√°rio	67038756533
+238	Ettore	 Ge√≥grafo	57512575644
 239	Simonetta	 Cientista	52093353067
 240	Santo	 Cozinheiro	74311173253
 241	Michelina	 Padeiro	40129081864
 242	Ignazio	 Barbeiro	23361960718
 243	Rossella	 Cabeleireiro	46221815277
 244	Rina	 Escultor	79647160879
-245	Pierluigi	 DanÁarino	35610823176
+245	Pierluigi	 Dan√ßarino	35610823176
 246	Remo	 Economista	87435731955
 247	Alessia	 Estilista	36846900649
 248	Nunzia	 Esteticista	87865130864
 249	Italo	 Florista	87923512282
-250	Rosalba	 FonoaudiÛlogo	16885924398
-251	Emma	 GarÁom	07346563405
+250	Rosalba	 Fonoaudi√≥logo	16885924398
+251	Emma	 Gar√ßom	07346563405
 252	Rossana	 Historiador	86382505267
 253	Tiziano	 Hoteleiro	95899642068
 254	Natale	 Ilustrador	40435209224
@@ -258,33 +258,33 @@
 257	Ivano	 Lavador de carros	08107883148
 258	Serena	 Marceneiro	94253154374
 259	Olga	 Maquiador	93028947643
-260	Alfio	 Mec‚nico	74036670022
-261	Carmen	 Metal˙rgico	49947331182
+260	Alfio	 Mec√¢nico	74036670022
+261	Carmen	 Metal√∫rgico	49947331182
 262	Lucio	 Nutricionista	60823071211
-263	Benito	 OceanÛgrafo	67561902372
-264	L˙cia	 Ortopedista	17429923423
-265	Mariangela	 PaleontÛlogo	04502563370
+263	Benito	 Ocean√≥grafo	67561902372
+264	L√∫cia	 Ortopedista	17429923423
+265	Mariangela	 Paleont√≥logo	04502563370
 266	Fulvio	 Pescador	94479853535
 267	Milena	 Piloto	51038025385
 268	Fiorella	 Porteiro	70446817368
 269	Agata	 Psicoterapeuta	57025085546
-270	Edoardo	 Quiropr·tico	00945533851
-271	Martina	 RepÛrter	12959315989
+270	Edoardo	 Quiropr√°tico	00945533851
+271	Martina	 Rep√≥rter	12959315989
 272	Mariano	 Salva-vidas	65629462706
 273	Livio	 Sapateiro	01899310445
 274	Ivan	 Soldador	77104740796
 275	Fernanda	 Taxista	49594171110
-276	Vita	 TÈcnico em inform·tica	81145736699
-277	Ines	 TÈcnico em radiologia	12747222674
-278	ValÈria	 TÈcnico em enfermagem	87396912779
-279	Valerio	 TÈcnico em eletrÙnica	14077480334
-280	Nunzio	 TÈcnico em mec‚nica	55024761357
-281	Raffaela	 TÈcnico em seguranÁa do trabalho	21133693510
-282	Addolorata	 TÈcnico em telecomunicaÁıes	05177632892
-283	Susanna	 TÈcnico em turismo	41003741797
+276	Vita	 T√©cnico em inform√°tica	81145736699
+277	Ines	 T√©cnico em radiologia	12747222674
+278	Val√©ria	 T√©cnico em enfermagem	87396912779
+279	Valerio	 T√©cnico em eletr√¥nica	14077480334
+280	Nunzio	 T√©cnico em mec√¢nica	55024761357
+281	Raffaela	 T√©cnico em seguran√ßa do trabalho	21133693510
+282	Addolorata	 T√©cnico em telecomunica√ß√µes	05177632892
+283	Susanna	 T√©cnico em turismo	41003741797
 284	Dante	 Terapeuta ocupacional	02994174845
 285	Beatrice	 Tesoureiro	54957064006
-286	Marilena	 TopÛgrafo	25438734577
+286	Marilena	 Top√≥grafo	25438734577
 287	Orazio	 Tradutor	07054786367
 288	Gianna	 Urologista	91722289569
 289	Dina	 Urologista	27940567647
@@ -292,12 +292,12 @@
 291	Elsa	 Vidraceiro	84165816260
 292	Letizia	 Vigia	29997105026
 293	Gaetana	 Web designer	84514144982
-294	Egidio	 XilÛgrafo	97260077800
+294	Egidio	 Xil√≥grafo	97260077800
 295	Giampaolo	 Yogaterapeuta	85380967417
 296	Aniello	 Zelador	39626187507
-297	Giampiero	 ZoÛlogo	89919571636
+297	Giampiero	 Zo√≥logo	89919571636
 298	Natalina	Comediante	92017978972
-299	Veronica	 MÈdico	20624918940
+299	Veronica	 M√©dico	20624918940
 300	Ivo	 Professor	58012992025
 301	Arturo	 Engenheiro	59651156870
 302	Guglielmo	 Advogado	10255107734
@@ -308,7 +308,7 @@
 307	Benedetto	 Policial	43257092022
 308	Giorgia	 Bombeiro	82540624590
 309	Virginia	 Dentista	49883744035
-310	Loris	 PsicÛlogo	98863292127
+310	Loris	 Psic√≥logo	98863292127
 311	Amalia	 Arquiteto	48704572061
 312	Amedeo	 Eletricista	48809057379
 313	Rodolfo	 Jornalista	48675263703
@@ -317,38 +317,38 @@
 316	Marzia	 Ator	00454948423
 317	Moreno	 Cantor	71277700525
 318	Antonello	 Agricultor	55290510258
-319	Mariella	 FotÛgrafo	89039052269
+319	Mariella	 Fot√≥grafo	89039052269
 320	Cristian	 Fisioterapeuta	21294880783
 321	Mirko	 Nutricionista	67404090397
 322	Irma	 Economista	98280630726
-323	Santina	 AstrÙnomo	19458271920
-324	Gianluigi	 BiÛlogo	26084252391
-325	Valter	 QuÌmico	11320966797
-326	Ermanno	 GeÛlogo	15640859992
+323	Santina	 Astr√¥nomo	19458271920
+324	Gianluigi	 Bi√≥logo	26084252391
+325	Valter	 Qu√≠mico	11320966797
+326	Ermanno	 Ge√≥logo	15640859992
 327	Flavia	 Tradutor	20714245313
 328	Marinella	 Motorista	23366417745
 329	Pierino	 Pedreiro	39561633169
 330	Alba	 Pintor	37032560422
-331	Cristiano	 Mec‚nico	28202120057
+331	Cristiano	 Mec√¢nico	28202120057
 332	Maura	 Vendedor	12622659122
 333	Damiano	 Terapeuta	20234832357
 334	Katia	 Psiquiatra	31237093476
 335	Sante	 Consultor	04428555657
-336	Loretta	 Veterin·rio	25115880483
-337	Cecilia	 GeÛgrafo	18531887982
+336	Loretta	 Veterin√°rio	25115880483
+337	Cecilia	 Ge√≥grafo	18531887982
 338	Pasqua	 Cientista	38798589949
 339	Osvaldo	 Cozinheiro	02914291000
 340	Christian	 Padeiro	27470128839
 341	Primo	 Barbeiro	71278055929
 342	Stella	 Cabeleireiro	25225599941
 343	Ferruccio	 Escultor	93293735890
-344	Amelia	 DanÁarino	28064306393
+344	Amelia	 Dan√ßarino	28064306393
 345	Rosetta	 Economista	25597530661
 346	Flora	 Estilista	06631754033
 347	Nello	 Esteticista	57194989793
 348	Alice	 Florista	73263016888
-349	Costantino	 FonoaudiÛlogo	71608085360
-350	Vanda	 GarÁom	09465927547
+349	Costantino	 Fonoaudi√≥logo	71608085360
+350	Vanda	 Gar√ßom	09465927547
 351	Gilberto	 Historiador	22030385145
 352	Serafina	 Hoteleiro	61802028404
 353	Gioacchino	 Ilustrador	61145024792
@@ -357,33 +357,33 @@
 356	Catia	 Lavador de carros	10596055068
 357	Lorenza	 Marceneiro	09787653778
 358	Mirco	 Maquiador	20000532724
-359	Edda	 Mec‚nico	19592486023
-360	Diana	 Metal˙rgico	38932237037
+359	Edda	 Mec√¢nico	19592486023
+360	Diana	 Metal√∫rgico	38932237037
 361	Sebastiana	 Nutricionista	71312058434
-362	Camillo	 OceanÛgrafo	72652393505
+362	Camillo	 Ocean√≥grafo	72652393505
 363	Gaspare	 Ortopedista	38553937699
-364	Arnaldo	 PaleontÛlogo	08096065980
+364	Arnaldo	 Paleont√≥logo	08096065980
 365	Giordano	 Pescador	37967665513
-366	ValÈrio	 Piloto	19892748378
+366	Val√©rio	 Piloto	19892748378
 367	Erminia	 Porteiro	42735997886
 368	Nino	 Psicoterapeuta	57636959077
-369	Nicolina	 Quiropr·tico	25427350525
-370	Arianna	 RepÛrter	33859099579
+369	Nicolina	 Quiropr√°tico	25427350525
+370	Arianna	 Rep√≥rter	33859099579
 371	Battista	 Salva-vidas	22563488075
 372	Gemma	 Sapateiro	12937841246
 373	Lorella	 Soldador	64476056982
 374	Luigino	 Taxista	03523516398
-375	Rosella	 TÈcnico em inform·tica	33545295694
-376	Donata	 TÈcnico em radiologia	66639395379
-377	Martino	 TÈcnico em enfermagem	56815604286
-378	Palma	 TÈcnico em eletrÙnica	16001087263
-379	Girolamo	 TÈcnico em mec‚nica	76187493342
-380	Viviana	 TÈcnico em seguranÁa do trabalho	63399795205
-381	Teresina	 TÈcnico em telecomunicaÁıes	99338160679
-382	Matilde	 TÈcnico em turismo	97524756596
+375	Rosella	 T√©cnico em inform√°tica	33545295694
+376	Donata	 T√©cnico em radiologia	66639395379
+377	Martino	 T√©cnico em enfermagem	56815604286
+378	Palma	 T√©cnico em eletr√¥nica	16001087263
+379	Girolamo	 T√©cnico em mec√¢nica	76187493342
+380	Viviana	 T√©cnico em seguran√ßa do trabalho	63399795205
+381	Teresina	 T√©cnico em telecomunica√ß√µes	99338160679
+382	Matilde	 T√©cnico em turismo	97524756596
 383	Rachele	 Terapeuta ocupacional	07357005852
 384	Luana	 Tesoureiro	26217592801
-385	David	 TopÛgrafo	80278332037
+385	David	 Top√≥grafo	80278332037
 386	Michelangelo	 Tradutor	47405528305
 387	Benedetta	 Urologista	54115668895
 388	Sabina	 Urologista	35925374118
@@ -391,15 +391,15 @@
 390	Carmelina	 Vidraceiro	13187292833
 391	Eva	 Vigia	82232582787
 392	Erika	 Web designer	02200298672
-393	Bartolomeo	 XilÛgrafo	15540210595
+393	Bartolomeo	 Xil√≥grafo	15540210595
 394	Anita	 Yogaterapeuta	57817233792
 395	Romeo	 Zelador	40546282614
-396	Ottavio	 ZoÛlogo	21221056880
+396	Ottavio	 Zo√≥logo	21221056880
 397	Rinaldo	 Vidraceiro	35565825080
 398	Nella	 Vigia	98813773444
 399	Nazzareno	 Web designer	47146062414
-400	Tonino	 XilÛgrafo	61010288637
-401	Adolfo	 MÈdico	40681363845
+400	Tonino	 Xil√≥grafo	61010288637
+401	Adolfo	 M√©dico	40681363845
 402	Eugenia	 Professor	26707566811
 403	Rolando	 Engenheiro	23608956666
 404	Ester	 Advogado	05677445471
@@ -410,7 +410,7 @@
 409	Achille	 Policial	11539290078
 410	Josef	 Bombeiro	49837870321
 411	Oreste	 Dentista	14697659308
-412	Livia	 PsicÛlogo	27988645609
+412	Livia	 Psic√≥logo	27988645609
 413	Severino	 Arquiteto	37601054308
 414	Patrizio	 Eletricista	95570259632
 415	Emiliano	 Jornalista	30829479428
@@ -419,38 +419,38 @@
 418	Giovannina	 Ator	05395070936
 419	Linda	 Cantor	07668101193
 420	Vera	 Agricultor	57516521414
-421	Salvatrice	 FotÛgrafo	52725912050
+421	Salvatrice	 Fot√≥grafo	52725912050
 422	Cav	 Fisioterapeuta	28343654663
 423	Pia	 Nutricionista	55580893524
 424	Tullio	 Economista	26190317250
-425	Vilma	 AstrÙnomo	49720739976
-426	Pierangelo	 BiÛlogo	62083148741
-427	Fiorenzo	 QuÌmico	61875579053
-428	Cesarina	 GeÛlogo	04347187722
+425	Vilma	 Astr√¥nomo	49720739976
+426	Pierangelo	 Bi√≥logo	62083148741
+427	Fiorenzo	 Qu√≠mico	61875579053
+428	Cesarina	 Ge√≥logo	04347187722
 429	Miriam	 Tradutor	79598983816
 430	Arcangelo	 Motorista	31967505855
 431	Aurora	 Pedreiro	59103279405
 432	Sauro	 Pintor	88217996241
-433	Raimondo	 Mec‚nico	24838439138
+433	Raimondo	 Mec√¢nico	24838439138
 434	Filippa	 Vendedor	33924471544
 435	Gianpaolo	 Terapeuta	79967693876
 436	Italia	 Psiquiatra	84236964654
 437	Alvaro	 Consultor	23959897808
-438	Cataldo	 Veterin·rio	53129631678
-439	Morena	 GeÛgrafo	17416937599
+438	Cataldo	 Veterin√°rio	53129631678
+439	Morena	 Ge√≥grafo	17416937599
 440	Rossi	 Cientista	27650265180
 441	Lara	 Cozinheiro	30901186356
 442	Ambrogio	 Padeiro	70547128944
 443	Lucrezia	 Barbeiro	07259653196
 444	Pierpaolo	 Cabeleireiro	55864503947
 445	Germano	 Escultor	80526132607
-446	Camilla	 DanÁarino	90657830784
+446	Camilla	 Dan√ßarino	90657830784
 447	Felicia	 Economista	85937488483
 448	Leone	 Estilista	77749334687
 449	Guerrino	 Esteticista	21599357036
 450	Giacomina	 Florista	16822387219
-451	Norma	 FonoaudiÛlogo	10649827296
-452	Augusta	 GarÁom	68855567663
+451	Norma	 Fonoaudi√≥logo	10649827296
+452	Augusta	 Gar√ßom	68855567663
 453	Enza	 Historiador	89091584493
 454	Manuel	 Hoteleiro	19922602816
 455	Pino	 Ilustrador	68091469275
@@ -459,47 +459,47 @@
 458	Mafalda	 Lavador de carros	91334193040
 459	Leonarda	 Marceneiro	22347637524
 460	Albino	 Maquiador	17662205619
-461	Bernardo	 Mec‚nico	79825237364
-462	Fabiana	 Metal˙rgico	24408540976
+461	Bernardo	 Mec√¢nico	79825237364
+462	Fabiana	 Metal√∫rgico	24408540976
 463	Adelina	 Nutricionista	93359962568
-464	Sofia	 OceanÛgrafo	32762416989
+464	Sofia	 Ocean√≥grafo	32762416989
 465	Clelia	 Ortopedista	54143303459
-466	Paolina	 PaleontÛlogo	46713020161
+466	Paolina	 Paleont√≥logo	46713020161
 467	Mariagrazia	 Pescador	20768190547
 468	Andreina	 Piloto	51004049524
 469	Piergiorgio	 Porteiro	22401838850
 470	Romana	 Psicoterapeuta	32815540043
-471	Libera	 Quiropr·tico	81293425799
-472	Licia	 RepÛrter	53765544943
-473	SÌlvio	 Salva-vidas	96560271993
+471	Libera	 Quiropr√°tico	81293425799
+472	Licia	 Rep√≥rter	53765544943
+473	S√≠lvio	 Salva-vidas	96560271993
 474	Orietta	 Sapateiro	60590417800
 475	Regina	 Soldador	97783157124
 476	Gilda	 Taxista	33011613714
-477	Mariarosaria	 TÈcnico em inform·tica	61090225665
-478	Oscar	 TÈcnico em radiologia	91501724235
-479	Alda	 TÈcnico em enfermagem	50907830494
-480	Romina	 TÈcnico em eletrÙnica	62982918013
-481	Clementina	 TÈcnico em mec‚nica	04150896073
-482	Gloria	 TÈcnico em seguranÁa do trabalho	03095636710
-483	Lisa	 TÈcnico em telecomunicaÁıes	37285364443
-484	Onofrio	 TÈcnico em turismo	99604636746
+477	Mariarosaria	 T√©cnico em inform√°tica	61090225665
+478	Oscar	 T√©cnico em radiologia	91501724235
+479	Alda	 T√©cnico em enfermagem	50907830494
+480	Romina	 T√©cnico em eletr√¥nica	62982918013
+481	Clementina	 T√©cnico em mec√¢nica	04150896073
+482	Gloria	 T√©cnico em seguran√ßa do trabalho	03095636710
+483	Lisa	 T√©cnico em telecomunica√ß√µes	37285364443
+484	Onofrio	 T√©cnico em turismo	99604636746
 485	Serafino	 Terapeuta ocupacional	23208508746
 486	Erminio	 Tesoureiro	71155781399
-487	Giampietro	 TopÛgrafo	07036620046
+487	Giampietro	 Top√≥grafo	07036620046
 488	Elia	 Tradutor	29930323668
-489	EmÌlio	 Urologista	68461099722
+489	Em√≠lio	 Urologista	68461099722
 490	Oronzo	 Urologista	12231953556
-491	EugÍnio	 Vendedor	59947716422
+491	Eug√™nio	 Vendedor	59947716422
 492	Giusy	 Vidraceiro	85428781610
 493	Virgilio	 Vigia	29672968009
 494	Annarita	 Web designer	43590461970
-495	Dora	 XilÛgrafo	74508580540
+495	Dora	 Xil√≥grafo	74508580540
 496	Fulvia	 Yogaterapeuta	03193738317
 497	Lia	 Zelador	24611782088
-498	Giacinto	 ZoÛlogo	80499936637
+498	Giacinto	 Zo√≥logo	80499936637
 499	Leda	Fazendeiro	77885568749
-500	L˙cio	Cartunista	77824277845
-501	Luisella	 MÈdico	73255666858
+500	L√∫cio	Cartunista	77824277845
+501	Luisella	 M√©dico	73255666858
 502	Wanda	 Professor	83970958448
 503	Romolo	 Engenheiro	78771283706
 504	Salvo	 Advogado	86862307605
@@ -510,7 +510,7 @@
 509	Ilario	 Policial	62819529138
 510	Pasqualino	 Bombeiro	15871832005
 511	Eduardo	 Dentista	88400414240
-512	Pio	 PsicÛlogo	27922603844
+512	Pio	 Psic√≥logo	27922603844
 513	Eliana	 Arquiteto	69244212619
 514	Fiorenza	 Eletricista	21924821239
 515	Vanna	 Jornalista	67838513134
@@ -519,38 +519,38 @@
 518	Celeste	 Ator	81812302699
 519	Delia	 Cantor	15977851484
 520	Denis	 Agricultor	96230882185
-521	Elide	 FotÛgrafo	04533811447
+521	Elide	 Fot√≥grafo	04533811447
 522	Venera	 Fisioterapeuta	63039616336
 523	Efisio	 Nutricionista	65170118709
 524	Samuele	 Economista	96826482758
-525	Otello	 AstrÙnomo	78318518560
-526	Ubaldo	 BiÛlogo	20092497812
-527	Vanessa	 QuÌmico	37631640179
-528	Raffaello	 GeÛlogo	73363804572
+525	Otello	 Astr√¥nomo	78318518560
+526	Ubaldo	 Bi√≥logo	20092497812
+527	Vanessa	 Qu√≠mico	37631640179
+528	Raffaello	 Ge√≥logo	73363804572
 529	Emidio	 Tradutor	37881053196
 530	Fortunata	 Motorista	49845956524
 531	Giancarla	 Pedreiro	09638959971
 532	Gigliola	 Pintor	04794267552
-533	Franz	 Mec‚nico	40949289957
+533	Franz	 Mec√¢nico	40949289957
 534	Consiglia	 Vendedor	45572277579
 535	Sabino	 Terapeuta	71578098274
 536	Tina	 Psiquiatra	62781564807
 537	Albina	 Consultor	11921918192
-538	William	 Veterin·rio	84895693518
-539	Floriana	 GeÛgrafo	01491179340
+538	William	 Veterin√°rio	84895693518
+539	Floriana	 Ge√≥grafo	01491179340
 540	Peter	 Cientista	63908929793
 541	Noemi	 Cozinheiro	25538236276
 542	Costanza	 Padeiro	41420170229
 543	Jacopo	 Barbeiro	17602287619
 544	Elisabeth	 Cabeleireiro	24280773251
 545	Carlotta	 Escultor	41165171727
-546	Debora	 DanÁarino	61608382671
+546	Debora	 Dan√ßarino	61608382671
 547	Tarcisio	 Economista	76925797708
 548	Leopoldo	 Estilista	18904781230
-549	CecÌlia	 Esteticista	89604776330
+549	Cec√≠lia	 Esteticista	89604776330
 550	Orsola	 Florista	16770831768
-551	Giada	 FonoaudiÛlogo	47145483895
-552	Clemente	 GarÁom	13812821651
+551	Giada	 Fonoaudi√≥logo	47145483895
+552	Clemente	 Gar√ßom	13812821651
 553	Gianpiero	 Historiador	97642071956
 554	Santino	 Hoteleiro	03646237981
 555	Lamberto	 Ilustrador	08467313955
@@ -559,46 +559,46 @@
 558	Virginio	 Lavador de carros	02281760684
 559	Santi	 Marceneiro	33470509909
 560	Gisella	 Maquiador	93166369654
-561	Johann	 Mec‚nico	51798966923
-562	Duilio	 Metal˙rgico	11797153644
+561	Johann	 Mec√¢nico	51798966923
+562	Duilio	 Metal√∫rgico	11797153644
 563	Demetrio	 Nutricionista	19420231402
-564	Vittorino	 OceanÛgrafo	81341602407
+564	Vittorino	 Ocean√≥grafo	81341602407
 565	Miranda	 Ortopedista	88724488920
-566	Adelaide	 PaleontÛlogo	11008808609
+566	Adelaide	 Paleont√≥logo	11008808609
 567	Monia	 Pescador	29879904671
 568	Brigida	 Piloto	06290656164
 569	Rossano	 Porteiro	94050953338
 570	Alberta	 Psicoterapeuta	84021091011
-571	Quinto	 Quiropr·tico	38007451509
-572	Giambattista	 RepÛrter	18651774642
+571	Quinto	 Quiropr√°tico	38007451509
+572	Giambattista	 Rep√≥rter	18651774642
 573	Silvestro	 Salva-vidas	58509719050
 574	Brunella	 Sapateiro	66021026274
 575	Sabatino	 Soldador	62506776083
 576	Fausta	 Taxista	39604807261
-577	Vittorina	 TÈcnico em inform·tica	52314790164
-578	Vasco	 TÈcnico em radiologia	62364540336
-579	Alma	 TÈcnico em enfermagem	72045648074
-580	Sabato	 TÈcnico em eletrÙnica	94430535706
-581	Giacoma	 TÈcnico em mec‚nica	66814290715
-582	Vinicio	 TÈcnico em seguranÁa do trabalho	25895435822
-583	GlÛria	 TÈcnico em telecomunicaÁıes	53214312785
-584	Ruggiero	 TÈcnico em turismo	29875820125
+577	Vittorina	 T√©cnico em inform√°tica	52314790164
+578	Vasco	 T√©cnico em radiologia	62364540336
+579	Alma	 T√©cnico em enfermagem	72045648074
+580	Sabato	 T√©cnico em eletr√¥nica	94430535706
+581	Giacoma	 T√©cnico em mec√¢nica	66814290715
+582	Vinicio	 T√©cnico em seguran√ßa do trabalho	25895435822
+583	Gl√≥ria	 T√©cnico em telecomunica√ß√µes	53214312785
+584	Ruggiero	 T√©cnico em turismo	29875820125
 585	Alois	 Terapeuta ocupacional	13371909885
 586	Palmira	 Tesoureiro	43336517376
-587	Antimo	 TopÛgrafo	25619309796
-588	DÈbora	 Tradutor	38577181594
+587	Antimo	 Top√≥grafo	25619309796
+588	D√©bora	 Tradutor	38577181594
 589	Liana	 Urologista	67705074739
 590	Lea	 Urologista	47750391813
 591	Daniel	 Vendedor	87359894470
-592	JÈssica	 Vidraceiro	73282627920
+592	J√©ssica	 Vidraceiro	73282627920
 593	Gaia	 Vigia	95294641698
 594	Tatiana	 Web designer	49263833007
-595	Leandro	 XilÛgrafo	79678710204
+595	Leandro	 Xil√≥grafo	79678710204
 596	Gavino	 Yogaterapeuta	33084914991
 597	Gen	 Zelador	64004298072
-598	Giuditta	 ZoÛlogo	34569473359
+598	Giuditta	 Zo√≥logo	34569473359
 599	Gerardina	Fazendeiro	67868837034
-600	Ersilia	 MÈdico	40354309498
+600	Ersilia	 M√©dico	40354309498
 601	Mimmo	 Professor	18663148865
 602	Pietra	 Engenheiro	47828934191
 603	Michael	 Advogado	17375463681
@@ -609,7 +609,7 @@
 608	Celestina	 Policial	01665695645
 609	Concettina	 Bombeiro	60510521238
 610	Provvidenza	 Dentista	42798415170
-611	Annita	 PsicÛlogo	08281044293
+611	Annita	 Psic√≥logo	08281044293
 612	Albertina	 Arquiteto	50211140394
 613	Danila	 Eletricista	16819915775
 614	Evelina	 Jornalista	62640985049
@@ -618,38 +618,38 @@
 617	Cira	 Ator	77289715633
 618	Tamara	 Cantor	40713847275
 619	Gerarda	 Agricultor	70274149454
-620	Vanni	 FotÛgrafo	00556387062
+620	Vanni	 Fot√≥grafo	00556387062
 621	Daria	 Fisioterapeuta	24514521490
 622	Ermes	 Nutricionista	68092924844
 623	Ignazia	 Economista	26462960135
-624	Gualtiero	 AstrÙnomo	11324147725
-625	Secondo	 BiÛlogo	63101780877
-626	Thomas	 QuÌmico	96835986236
-627	Nicolino	 GeÛlogo	56216759395
+624	Gualtiero	 Astr√¥nomo	11324147725
+625	Secondo	 Bi√≥logo	63101780877
+626	Thomas	 Qu√≠mico	96835986236
+627	Nicolino	 Ge√≥logo	56216759395
 628	Elvio	 Tradutor	66424773671
 629	Olimpia	 Motorista	81912326591
 630	Gelsomina	 Pedreiro	93439414153
 631	Max	 Pintor	49876034692
-632	Gastone	 Mec‚nico	80971477272
+632	Gastone	 Mec√¢nico	80971477272
 633	Paolino	 Vendedor	19019117316
 634	Leo	 Terapeuta	65907897098
 635	Pietrina	 Psiquiatra	99187619428
 636	Loreta	 Consultor	63806564148
-637	Nerina	 Veterin·rio	57661212125
-638	Costa	 GeÛgrafo	29482431603
+637	Nerina	 Veterin√°rio	57661212125
+638	Costa	 Ge√≥grafo	29482431603
 639	Oriana	 Cientista	21995579635
 640	Alfonsina	 Cozinheiro	22936962396
 641	Karl	 Padeiro	13610478165
 642	Celestino	 Barbeiro	59818185955
 643	Concetto	 Cabeleireiro	73831643959
 644	Gianpietro	 Escultor	34701748704
-645	Rosangela	 DanÁarino	09535716541
+645	Rosangela	 Dan√ßarino	09535716541
 646	Isidoro	 Economista	12065440353
 647	Maurizia	 Estilista	86856953030
 648	Bertilla	 Esteticista	04267897801
 649	Giovan	 Florista	49852104632
-650	V·lter	 FonoaudiÛlogo	18374581685
-651	Marialuisa	 GarÁom	45771425824
+650	V√°lter	 Fonoaudi√≥logo	18374581685
+651	Marialuisa	 Gar√ßom	45771425824
 652	Adalgisa	 Historiador	79774897647
 653	Omar	 Hoteleiro	63238729791
 654	Anselmo	 Ilustrador	99921646180
@@ -658,46 +658,46 @@
 657	Mariateresa	 Lavador de carros	35758075326
 658	Mariarosa	 Marceneiro	79675082318
 659	Lido	 Maquiador	01415730645
-660	Arcangela	 Mec‚nico	44690993637
-661	Vitantonio	 Metal˙rgico	47168731868
+660	Arcangela	 Mec√¢nico	44690993637
+661	Vitantonio	 Metal√∫rgico	47168731868
 662	Wilma	 Nutricionista	49753743018
-663	Anton	 OceanÛgrafo	67130549607
+663	Anton	 Ocean√≥grafo	67130549607
 664	Renza	 Ortopedista	21942157372
-665	Mary	 PaleontÛlogo	35672601936
+665	Mary	 Paleont√≥logo	35672601936
 666	Girolama	 Pescador	12069976725
 667	Nives	 Piloto	18716783336
 668	Libero	 Porteiro	53802323287
 669	Dolores	 Psicoterapeuta	39241134786
-670	Agostina	 Quiropr·tico	48406675307
-671	Eros	 RepÛrter	55736275080
+670	Agostina	 Quiropr√°tico	48406675307
+671	Eros	 Rep√≥rter	55736275080
 672	Ottorino	 Salva-vidas	03379582555
 673	Liborio	 Sapateiro	32494766350
 674	Fedele	 Soldador	38629145055
 675	Angiolino	 Taxista	06605807703
-676	Esterina	 TÈcnico em inform·tica	71064422004
-677	Incoronata	 TÈcnico em radiologia	88661486701
-678	Fabrizia	 TÈcnico em enfermagem	23102328628
-679	Ermelinda	 TÈcnico em eletrÙnica	62114889985
-680	Fortuna	 TÈcnico em mec‚nica	03763728062
-681	…rica	 TÈcnico em seguranÁa do trabalho	03847341954
-682	Giustina	 TÈcnico em telecomunicaÁıes	47759794089
-683	Ilenia	 TÈcnico em turismo	74172551453
+676	Esterina	 T√©cnico em inform√°tica	71064422004
+677	Incoronata	 T√©cnico em radiologia	88661486701
+678	Fabrizia	 T√©cnico em enfermagem	23102328628
+679	Ermelinda	 T√©cnico em eletr√¥nica	62114889985
+680	Fortuna	 T√©cnico em mec√¢nica	03763728062
+681	√ârica	 T√©cnico em seguran√ßa do trabalho	03847341954
+682	Giustina	 T√©cnico em telecomunica√ß√µes	47759794089
+683	Ilenia	 T√©cnico em turismo	74172551453
 684	Arrigo	 Terapeuta ocupacional	68692045988
-685	DÈborah	 Tesoureiro	24652115643
-686	Giusi	 TopÛgrafo	69607040915
+685	D√©borah	 Tesoureiro	24652115643
+686	Giusi	 Top√≥grafo	69607040915
 687	Lauro	 Tradutor	70552153901
 688	Rosita	 Urologista	21467667752
 689	Pellegrino	 Urologista	66850862482
 690	Paul	 Vendedor	19949797999
 691	Giannino	 Vidraceiro	10309497560
-692	P‚mela	 Vigia	04470150937
+692	P√¢mela	 Vigia	04470150937
 693	Catello	 Web designer	17905199259
-694	Igino	 XilÛgrafo	60702329676
+694	Igino	 Xil√≥grafo	60702329676
 695	Erasmo	 Yogaterapeuta	76322341954
 696	Ileana	 Zelador	98682099664
-697	Doriana	 ZoÛlogo	67160787445
+697	Doriana	 Zo√≥logo	67160787445
 698	Angelica	Comediante	01738997641
-699	Ernestina	 MÈdico	78782416903
+699	Ernestina	 M√©dico	78782416903
 700	Placido	 Professor	28020496997
 701	Micaela	 Engenheiro	36647023080
 702	Angiolo	 Advogado	64189529463
@@ -708,7 +708,7 @@
 707	Samantha	 Policial	79009147159
 708	Lucilla	 Bombeiro	02335708605
 709	Robert	 Dentista	53051913597
-710	Christine	 PsicÛlogo	33385931827
+710	Christine	 Psic√≥logo	33385931827
 711	Lilia	 Arquiteto	96048809507
 712	Ludovico	 Eletricista	12209780086
 713	Gianmarco	 Jornalista	10810727239
@@ -717,73 +717,73 @@
 716	Saveria	 Ator	37696832363
 717	Savina	 Cantor	24554457028
 718	Adelmo	 Agricultor	76813653241
-719	Marika	 FotÛgrafo	76807605824
+719	Marika	 Fot√≥grafo	76807605824
 720	Vecchia	 Fisioterapeuta	93993508945
 721	Crocifissa	 Nutricionista	43418128182
 722	Peppino	 Economista	13306940950
-723	Iris	 AstrÙnomo	64957110831
-724	LÌdia	 BiÛlogo	09472708484
-725	Pantaleo	 QuÌmico	18655870544
-726	Settimio	 GeÛlogo	20628542668
+723	Iris	 Astr√¥nomo	64957110831
+724	L√≠dia	 Bi√≥logo	09472708484
+725	Pantaleo	 Qu√≠mico	18655870544
+726	Settimio	 Ge√≥logo	20628542668
 727	Lanfranco	 Tradutor	96378611181
 728	Monika	 Motorista	18030412998
 729	Cesira	 Pedreiro	86736775633
 730	Denise	 Pintor	42033118447
-731	Marzio	 Mec‚nico	70420457892
+731	Marzio	 Mec√¢nico	70420457892
 732	Martin	 Vendedor	02174387046
 733	Igor	 Terapeuta	04559099359
 734	Russo	 Psiquiatra	82132513788
 735	Agatino	 Consultor	10415321667
-736	Franceschina	 Veterin·rio	42718166539
-737	Nico	 GeÛgrafo	63688736440
+736	Franceschina	 Veterin√°rio	42718166539
+737	Nico	 Ge√≥grafo	63688736440
 738	Pierangela	 Cientista	38954425398
 739	Pippo	 Cozinheiro	64873546347
 740	Nando	 Padeiro	54711165630
 741	Gustavo	 Barbeiro	19565039344
 742	Giulietta	 Cabeleireiro	11326912494
 743	Molin	 Escultor	73923769850
-744	Loreto	 DanÁarino	15940937507
+744	Loreto	 Dan√ßarino	15940937507
 745	Alida	 Economista	19130191208
 746	Remigio	 Estilista	95863774400
 747	Dorotea	 Esteticista	51916378116
 748	Ombretta	 Florista	39529739854
-749	Bortolo	 FonoaudiÛlogo	11654257915
-750	Carmina	 GarÁom	99359730510
-751	EmÌlia	 Historiador	37088035490
+749	Bortolo	 Fonoaudi√≥logo	11654257915
+750	Carmina	 Gar√ßom	99359730510
+751	Em√≠lia	 Historiador	37088035490
 752	Loriana	 Hoteleiro	05036215154
-753	AntÛnia	 Ilustrador	70154944880
+753	Ant√≥nia	 Ilustrador	70154944880
 754	Eraldo	 Joalheiro	48228392176
 755	Mariuccia	 Juiz	84198796988
 756	Velia	 Lavador de carros	59423280924
 757	Ferrari	 Marceneiro	20384491786
-758	T‚nia	 Maquiador	97943856070
-759	Sarah	 Mec‚nico	24658250295
-760	Adamo	 Metal˙rgico	17492888840
+758	T√¢nia	 Maquiador	97943856070
+759	Sarah	 Mec√¢nico	24658250295
+760	Adamo	 Metal√∫rgico	17492888840
 761	Candida	 Nutricionista	18038965454
-762	Gianfranca	 OceanÛgrafo	39468690870
+762	Gianfranca	 Ocean√≥grafo	39468690870
 763	Giorgina	 Ortopedista	05908885581
-764	Egle	 PaleontÛlogo	52551454539
+764	Egle	 Paleont√≥logo	52551454539
 765	Vedove	 Pescador	02872851663
 766	Amerigo	 Piloto	57436291139
 767	Graziana	 Porteiro	07988023916
 768	Genoveffa	 Psicoterapeuta	17918683449
-769	Annibale	 Quiropr·tico	49485435551
-770	Lauretta	 RepÛrter	95503364898
+769	Annibale	 Quiropr√°tico	49485435551
+770	Lauretta	 Rep√≥rter	95503364898
 771	Liberato	 Salva-vidas	19358445297
 772	Nevio	 Sapateiro	84551395410
 773	Costantina	 Soldador	64827538891
 774	Armida	 Taxista	80971095012
-775	VirgÌnia	 TÈcnico em inform·tica	53201140624
-776	Ana	 TÈcnico em radiologia	98990372739
-777	NicolÚ	 TÈcnico em enfermagem	20030430071
-778	Edmondo	 TÈcnico em eletrÙnica	17954934884
-779	”scar	 TÈcnico em mec‚nica	54876586043
-780	Cosmo	 TÈcnico em seguranÁa do trabalho	98489384943
-781	Pompeo	 TÈcnico em telecomunicaÁıes	31566357472
-782	Clotilde	 TÈcnico em turismo	10410034078
+775	Virg√≠nia	 T√©cnico em inform√°tica	53201140624
+776	Ana	 T√©cnico em radiologia	98990372739
+777	Nicol√≤	 T√©cnico em enfermagem	20030430071
+778	Edmondo	 T√©cnico em eletr√¥nica	17954934884
+779	√ìscar	 T√©cnico em mec√¢nica	54876586043
+780	Cosmo	 T√©cnico em seguran√ßa do trabalho	98489384943
+781	Pompeo	 T√©cnico em telecomunica√ß√µes	31566357472
+782	Clotilde	 T√©cnico em turismo	10410034078
 783	Ambra	 Terapeuta ocupacional	34210923217
 784	Tomaso	 Tesoureiro	20352196349
-785	Fabiano	 TopÛgrafo	90080720359
+785	Fabiano	 Top√≥grafo	90080720359
 786	Lodovico	 Tradutor	16068591249
 787	Poli	 Urologista	31241359061
 788	Agatina	 Urologista	65501779259
@@ -791,15 +791,15 @@
 790	Costanzo	 Vidraceiro	11300887460
 791	Severina	 Vigia	22804059808
 792	Gabriela	 Web designer	81606942413
-793	Fiorina	 XilÛgrafo	94065606578
+793	Fiorina	 Xil√≥grafo	94065606578
 794	Anastasia	 Yogaterapeuta	44494577172
 795	Doriano	 Zelador	91096904959
-796	Annina	 ZoÛlogo	35336108839
+796	Annina	 Zo√≥logo	35336108839
 797	Tony	 Vidraceiro	73367517386
 798	Magda	 Vigia	17889096596
 799	Eligio	 Web designer	97400451095
-800	Sac	 XilÛgrafo	88219773119
-801	Gianmario	 MÈdico	80474834861
+800	Sac	 Xil√≥grafo	88219773119
+801	Gianmario	 M√©dico	80474834861
 802	Speranza	 Professor	04459691930
 803	Helga	 Engenheiro	22689715406
 804	Adelio	 Advogado	54242026035
@@ -810,7 +810,7 @@
 809	Pozzo	 Policial	93347592995
 810	Gigi	 Bombeiro	54446657445
 811	Gianbattista	 Dentista	08165124177
-812	Colomba	 PsicÛlogo	38076752904
+812	Colomba	 Psic√≥logo	38076752904
 813	Melania	 Arquiteto	81848238661
 814	Cin	 Eletricista	67191282934
 815	Guerino	 Jornalista	39522413475
@@ -819,87 +819,87 @@
 818	Ludovica	 Ator	40931190365
 819	Rocca	 Cantor	26727678211
 820	Hermann	 Agricultor	24563789551
-821	Iride	 FotÛgrafo	14588232732
+821	Iride	 Fot√≥grafo	14588232732
 822	Felicita	 Fisioterapeuta	39553491013
 823	Viola	 Nutricionista	78571755856
 824	Orazia	 Economista	00144551192
-825	Liberata	 AstrÙnomo	64440493406
-826	Berardino	 BiÛlogo	04052653367
-827	Ivone	 QuÌmico	68274553224
-828	Biagia	 GeÛlogo	17544699333
-829	AngÈlica	 Tradutor	32663491415
-830	FabÌola	 Motorista	23777385586
+825	Liberata	 Astr√¥nomo	64440493406
+826	Berardino	 Bi√≥logo	04052653367
+827	Ivone	 Qu√≠mico	68274553224
+828	Biagia	 Ge√≥logo	17544699333
+829	Ang√©lica	 Tradutor	32663491415
+830	Fab√≠ola	 Motorista	23777385586
 831	Tosca	 Pedreiro	66802175681
 832	Liviana	 Pintor	36849587017
-833	Enio	 Mec‚nico	84984481181
+833	Enio	 Mec√¢nico	84984481181
 834	Floriano	 Vendedor	62303290973
 835	Marica	 Terapeuta	32008054584
 836	Lavinia	 Psiquiatra	70323772097
 837	Dorina	 Consultor	93774575490
-838	Valeriano	 Veterin·rio	51415319631
-839	Leonello	 GeÛgrafo	96687814949
+838	Valeriano	 Veterin√°rio	51415319631
+839	Leonello	 Ge√≥grafo	96687814949
 840	Baldassare	 Cientista	08746409213
 841	Valle	 Cozinheiro	52153237369
 842	Narciso	 Padeiro	93258352770
 843	Eliseo	 Barbeiro	68328514739
 844	Innocenzo	 Cabeleireiro	10750147725
 845	Martha	 Escultor	55088531289
-846	Jolanda	 DanÁarino	17120072712
+846	Jolanda	 Dan√ßarino	17120072712
 847	Arduino	 Economista	16489582284
 848	Enrichetta	 Estilista	12901723887
 849	Ermenegildo	 Esteticista	35931371302
 850	Peppe	 Florista	98148476231
-851	Aristide	 FonoaudiÛlogo	05744577602
-852	Antonetta	 GarÁom	70456476732
+851	Aristide	 Fonoaudi√≥logo	05744577602
+852	Antonetta	 Gar√ßom	70456476732
 853	Bonaria	 Historiador	36431151267
 854	Pra	 Hoteleiro	06821119339
 855	Battistina	 Ilustrador	37925466814
-856	AurÈlio	 Joalheiro	08332943128
+856	Aur√©lio	 Joalheiro	08332943128
 857	Novella	 Juiz	06506066262
 858	Bice	 Lavador de carros	13532003518
 859	Monache	 Marceneiro	67088875073
 860	Tommasina	 Maquiador	92324247049
-861	Goffredo	 Mec‚nico	94216204474
-862	Ottavia	 Metal˙rgico	70355882609
+861	Goffredo	 Mec√¢nico	94216204474
+862	Ottavia	 Metal√∫rgico	70355882609
 863	Manola	 Nutricionista	34121124272
-864	Stefan	 OceanÛgrafo	75155873328
+864	Stefan	 Ocean√≥grafo	75155873328
 865	Lida	 Ortopedista	43177422149
-866	Vania	 PaleontÛlogo	12881141912
+866	Vania	 Paleont√≥logo	12881141912
 867	Gioia	 Pescador	82080858298
 868	Palmina	 Piloto	05912068370
 869	Faustino	 Porteiro	82763481227
 870	Giovannino	 Psicoterapeuta	01193988700
-871	Ivonne	 Quiropr·tico	72297275783
-872	Salvatorica	 RepÛrter	72823302469
+871	Ivonne	 Quiropr√°tico	72297275783
+872	Salvatorica	 Rep√≥rter	72823302469
 873	Fiore	 Salva-vidas	48029720193
 874	John	 Sapateiro	71940620498
 875	Alfiero	 Soldador	25748074163
 876	Andreas	 Taxista	70745288964
-877	Iva	 TÈcnico em inform·tica	18256008441
-878	Gerlando	 TÈcnico em radiologia	48540254747
-879	Clorinda	 TÈcnico em enfermagem	25925955607
-880	Orfeo	 TÈcnico em eletrÙnica	60741922969
-881	Nat·lia	 TÈcnico em mec‚nica	49099317157
-882	Imelda	 TÈcnico em seguranÁa do trabalho	05485958534
-883	Carola	 TÈcnico em telecomunicaÁıes	65996101540
-884	Teresio	 TÈcnico em turismo	38008724534
+877	Iva	 T√©cnico em inform√°tica	18256008441
+878	Gerlando	 T√©cnico em radiologia	48540254747
+879	Clorinda	 T√©cnico em enfermagem	25925955607
+880	Orfeo	 T√©cnico em eletr√¥nica	60741922969
+881	Nat√°lia	 T√©cnico em mec√¢nica	49099317157
+882	Imelda	 T√©cnico em seguran√ßa do trabalho	05485958534
+883	Carola	 T√©cnico em telecomunica√ß√µes	65996101540
+884	Teresio	 T√©cnico em turismo	38008724534
 885	Catena	 Terapeuta ocupacional	98152301327
 886	Letteria	 Tesoureiro	51490435576
-887	Bona	 TopÛgrafo	83460361322
+887	Bona	 Top√≥grafo	83460361322
 888	Bartolo	 Tradutor	92395048058
-889	LÌvia	 Urologista	54448158847
+889	L√≠via	 Urologista	54448158847
 890	Waltraud	 Urologista	51667755193
 891	Manuele	 Vendedor	76702597122
 892	Gesuino	 Vidraceiro	00843261777
 893	Enea	 Vigia	67171004551
 894	Ingrid	 Web designer	09398064794
-895	Greta	 XilÛgrafo	64026101360
+895	Greta	 Xil√≥grafo	64026101360
 896	Miria	 Yogaterapeuta	36088539962
 897	Beppe	 Zelador	55424049234
-898	Le„o	 ZoÛlogo	61859524855
+898	Le√£o	 Zo√≥logo	61859524855
 899	Onorina	Fazendeiro	77214919233
 900	Pierfrancesco	Cartunista	26417758780
-901	Bernardina	 MÈdico	44788114964
+901	Bernardina	 M√©dico	44788114964
 902	Deborah	 Professor	79447669894
 903	Natascia	 Engenheiro	00805186341
 904	Norina	 Advogado	65139563194
@@ -910,7 +910,7 @@
 909	Rosamaria	 Policial	24805767199
 910	Oliva	 Bombeiro	23575119226
 911	Damiana	 Dentista	04288723537
-912	Fiammetta	 PsicÛlogo	21668686575
+912	Fiammetta	 Psic√≥logo	21668686575
 913	Gavina	 Arquiteto	47931545463
 914	Catterina	 Eletricista	18018976219
 915	Cristoforo	 Jornalista	22321726096
@@ -919,73 +919,73 @@
 918	Oriano	 Ator	20029283149
 919	Corradina	 Cantor	26513410793
 920	Quirino	 Agricultor	01241502876
-921	Melissa	 FotÛgrafo	02165136586
+921	Melissa	 Fot√≥grafo	02165136586
 922	Rosolino	 Fisioterapeuta	58520982080
 923	Americo	 Nutricionista	52124810817
 924	Letterio	 Economista	97061502178
-925	Attilia	 AstrÙnomo	34419174046
-926	Giandomenico	 BiÛlogo	02260666284
-927	Edi	 QuÌmico	39693504560
-928	Siro	 GeÛlogo	11387150083
+925	Attilia	 Astr√¥nomo	34419174046
+926	Giandomenico	 Bi√≥logo	02260666284
+927	Edi	 Qu√≠mico	39693504560
+928	Siro	 Ge√≥logo	11387150083
 929	Generoso	 Tradutor	45138505442
 930	Nazario	 Motorista	75161230983
 931	Nora	 Pedreiro	39745175997
 932	Teodora	 Pintor	58608553956
-933	Vladimiro	 Mec‚nico	09615124040
+933	Vladimiro	 Mec√¢nico	09615124040
 934	Angiola	 Vendedor	34984173637
 935	Romualdo	 Terapeuta	35270573423
 936	Erica	 Psiquiatra	20232845367
 937	Raffaelina	 Consultor	21078211100
-938	Cesarino	 Veterin·rio	17001190850
-939	Vitaliano	 GeÛgrafo	38649224509
+938	Cesarino	 Veterin√°rio	17001190850
+939	Vitaliano	 Ge√≥grafo	38649224509
 940	Pierantonio	 Cientista	35691334932
-941	GregÛrio	 Cozinheiro	41445159680
+941	Greg√≥rio	 Cozinheiro	41445159680
 942	Edvige	 Padeiro	47428356161
 943	Vitale	 Barbeiro	31403319558
 944	Brigitte	 Cabeleireiro	23106599952
 945	Emiliana	 Escultor	07256169287
-946	Cosetta	 DanÁarino	04373608375
+946	Cosetta	 Dan√ßarino	04373608375
 947	Hash	 Economista	25115613944
 948	Pamela	 Estilista	75232668085
 949	Nereo	 Esteticista	41153044952
 950	Giuseppino	 Florista	10945604868
-951	Stanislao	 FonoaudiÛlogo	12782477397
-952	Fedora	 GarÁom	17123956463
+951	Stanislao	 Fonoaudi√≥logo	12782477397
+952	Fedora	 Gar√ßom	17123956463
 953	Filiberto	 Historiador	33288579142
 954	Patrick	 Hoteleiro	73557811981
-955	EgÌdio	 Ilustrador	05746071489
+955	Eg√≠dio	 Ilustrador	05746071489
 956	Giovina	 Joalheiro	53207138397
 957	Armanda	 Juiz	99394737512
 958	Adalberto	 Lavador de carros	86544865110
 959	Mohamed	 Marceneiro	98941380313
 960	Nina	 Maquiador	70048445873
-961	Pozza	 Mec‚nico	20371822656
-962	Mattea	 Metal˙rgico	68489170086
+961	Pozza	 Mec√¢nico	20371822656
+962	Mattea	 Metal√∫rgico	68489170086
 963	Tindaro	 Nutricionista	66662150405
-964	Edo	 OceanÛgrafo	36644197652
+964	Edo	 Ocean√≥grafo	36644197652
 965	Edgardo	 Ortopedista	72492300329
-966	Moira	 PaleontÛlogo	99307164809
+966	Moira	 Paleont√≥logo	99307164809
 967	Ave	 Pescador	12590869954
 968	Hubert	 Piloto	27098314875
 969	Gioconda	 Porteiro	50932410344
 970	Johanna	 Psicoterapeuta	04343212802
-971	Gerolamo	 Quiropr·tico	88389830496
-972	Furio	 RepÛrter	46452336940
+971	Gerolamo	 Quiropr√°tico	88389830496
+972	Furio	 Rep√≥rter	46452336940
 973	Bambina	 Salva-vidas	45474342960
 974	Norberto	 Sapateiro	76509298562
 975	Ilio	 Soldador	21993209483
 976	Richard	 Taxista	02584127464
-977	Ninfa	 TÈcnico em inform·tica	39634416797
-978	Tania	 TÈcnico em radiologia	71720132868
-979	Aida	 TÈcnico em enfermagem	40004632982
-980	Gianmaria	 TÈcnico em eletrÙnica	68519056469
-981	Ramona	 TÈcnico em mec‚nica	37933945311
-982	Nazareno	 TÈcnico em seguranÁa do trabalho	58059780217
-983	Angelino	 TÈcnico em telecomunicaÁıes	01818510544
-984	Olindo	 TÈcnico em turismo	21916247021
+977	Ninfa	 T√©cnico em inform√°tica	39634416797
+978	Tania	 T√©cnico em radiologia	71720132868
+979	Aida	 T√©cnico em enfermagem	40004632982
+980	Gianmaria	 T√©cnico em eletr√¥nica	68519056469
+981	Ramona	 T√©cnico em mec√¢nica	37933945311
+982	Nazareno	 T√©cnico em seguran√ßa do trabalho	58059780217
+983	Angelino	 T√©cnico em telecomunica√ß√µes	01818510544
+984	Olindo	 T√©cnico em turismo	21916247021
 985	Isa	 Terapeuta ocupacional	38992432330
 986	Giusto	 Tesoureiro	33225689265
-987	Nedo	 TopÛgrafo	44350920184
+987	Nedo	 Top√≥grafo	44350920184
 988	Jean	 Tradutor	30881432323
 989	Samanta	 Urologista	61334522075
 990	Nazzarena	 Urologista	72980998228
@@ -993,9 +993,9 @@
 992	Rosy	 Vidraceiro	96800816699
 993	Palmiro	 Vigia	63532295925
 994	Silva	 Web designer	21653607542
-995	Alfonsa	 XilÛgrafo	80414427049
+995	Alfonsa	 Xil√≥grafo	80414427049
 996	Glauco	 Yogaterapeuta	59922220511
 997	Georg	 Zelador	66976217857
-998	Tullia	 ZoÛlogo	01208918300
+998	Tullia	 Zo√≥logo	01208918300
 999	Pancrazio	Fazendeiro	31829829600
-1000	Gio	 MÈdico	71609048091
+1000	Gio	 M√©dico	71609048091
