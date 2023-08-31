@@ -240,7 +240,6 @@ int func_importa(Funcionario **func, int count, int max)
         int repetidos = 0;
 
         fscanf(entrada, "%d\n", &count_import);
-
         int i;
         if ((count+count_import) < max)
         {
