@@ -2,23 +2,28 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <time.h>
 #include "funcionario.h"
+// #include "funcionario2.h"
+// #include "dados.h"
 
 
 #define MAX_FUNC 10000
 
 char opcoes(void);
+int teste_input(char *resp);
+long long doc_format(char *doc);
 
 int main(void) { 
     int count_func, ID;
     char opcao;
 
-    int documento;
+    char documento[12];
+    long long doc_int;
+    // long long documento;
     char nome[31], cargo[41];
 
     Funcionario **funcionario = (Funcionario**) calloc(MAX_FUNC,sizeof(Funcionario*));
-    
+    // Dado *cpf;
     FILE *dados_func = fopen("arquivo.txt", "rt");
 	if (dados_func == NULL) {
 		printf("Nao foi possivel abrir o arquivo.\n");
@@ -38,24 +43,33 @@ int main(void) {
         switch (opcao) {
             case '1':  
                 printf("Digite o nome: ");
-                scanf(" %30[^\n]", nome);
+                scanf(" %30[^0-9\n]", nome);
                 fflush(stdin);
                 printf("Digite o cargo: ");
                 scanf(" %40[^\n]", cargo);
                 fflush(stdin);
-                printf("Digite o documento: ");
-                scanf("%d", &documento);
+                printf("Digite os numeros do CPF (sem \".\" ou \"-\"): ");
+                scanf("%11[^\n]", documento);
+                // int test_doc =  scanf("%lld", &documento);
                 fflush(stdin);
+                if (doc_format(documento)) {
+                    doc_int = atoll(documento); 
+                } else {
+                    printf("\nErro! no CPF deve conter apenas numeros.\n");
+                    break;
+                }
                 // printf("%d", count_func);
                 
                 if (count_func < MAX_FUNC) {
-                    if (func_procura(funcionario, count_func, documento)) {
-                        funcionario[count_func] = func_cadastra(1, nome, cargo, documento);
+                    if (func_procura(funcionario, count_func, doc_int)) {
+                        // cpf = preenche_dado(documento, 0);
+                        // funcionario[count_func] = func_cadastra(1, nome, cargo, cpf);
+                        funcionario[count_func] = func_cadastra(1, nome, cargo, doc_int);
                         count_func++;
+                        func_ordena(funcionario, count_func);
                     } else {
                         printf("\nO documento inserido ja foi cadastrado por outro funcionario!\n\n");
                     }
-                    func_ordena(funcionario, count_func);
 
                 } else {
                     printf("Maximo de funcionarios atingido!");
@@ -73,20 +87,24 @@ int main(void) {
                 break;
     
             case '4':
-                char resp;
+                char resp[3];
                 int novos = count_func - ID;
                 
                 printf("\nEncerrando Programa...\n");
                 if (novos != 0) {
-                    printf("\nHa %d cadastros novos que ainda nao foram salvos.", novos);
-                    printf("\nDeseja Salvar [S/N]? ");
-                    scanf(" %c", &resp);
-                    fflush(stdin);
-                    
-                    if (toupper(resp) == 'S') {
-                        func_salva(funcionario, dados_func, count_func);
+                        printf("\nHa %d cadastros novos que ainda nao foram salvos.", novos);
+                    while (1) {
+                        printf("\nDeseja Salvar [S/N]? ");
+                        int cont = teste_input(resp);
+                        if (cont == 'S') {
+                            func_salva(funcionario, dados_func, count_func);
+                            break;
+                        } else if (cont == 'N') break;
+                        else printf("\nOpcao invalida! Tente novamente.\n");
                     }
+
                 }
+                    
                 printf("\nPrograma Encerrado!\n");
                 break;
 
@@ -110,13 +128,29 @@ char opcoes(void) {
     printf("\n3 - Importar funcionarios");
     printf("\n4 - Encerrar");
     printf("\nEscolha uma opcao: ");
-    scanf(" %2[^\n]", opcao);
+    return teste_input(opcao);
+}
+
+int teste_input(char *resp)
+{
+    scanf(" %2[^\n]", resp);
     fflush(stdin);
-    int len = strlen(opcao);
-    if(len == 1){
-        return opcao[0];
-    }if(len >= 2){
+    int len = strlen(resp);
+    if(len == 1) {
+        return toupper(resp[0]);
+    } else if(len >= 2) {
         printf("\nLimite de caracter atingido!\n");
     }
     return 0;
+}
+
+long long doc_format(char *doc)
+{
+    int i;
+    for (i = 0; doc[i] != '\0'; i++)
+    {
+        if (!(doc[i] >= '0' && doc[i] <= '9'))
+            return 0;
+    }
+    return 1;
 }

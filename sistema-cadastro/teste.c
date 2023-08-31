@@ -1,38 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct aluno {
-  char nome[21];
-  int matricula;
-} Aluno;
-
-Aluno *alunos[10];
+#include <limits.h>
 
 int main(void) {
 
-  // int i;
-  // for (i = 0; i < 5; i++) {
-  //   alunos[i] = (Aluno*)malloc(sizeof(Aluno));
-  //   scanf(" %20[^\n]", alunos[i]->nome);
-  //   scanf("%d", &alunos[i]->matricula);
-  // }
-  
+  // printf("CHAR_BIT    :   %d\n", CHAR_BIT);
+  // printf("CHAR_MAX    :   %d\n", CHAR_MAX);
+  // printf("CHAR_MIN    :   %d\n", CHAR_MIN);
+  // printf("INT_MAX     :   %d\n", INT_MAX);
+  // printf("INT_MIN     :   %d\n", INT_MIN);
+  // printf("LONG_MAX    :   %lld\n", (long long) LLONG_MAX);
+  // printf("LONG_MIN    :   %lld\n", (long long) LONG_MIN);
+  // printf("SCHAR_MAX   :   %d\n", SCHAR_MAX);
+  // printf("SCHAR_MIN   :   %d\n", SCHAR_MIN);
+  // printf("SHRT_MAX    :   %d\n", SHRT_MAX);
+  // printf("SHRT_MIN    :   %d\n", SHRT_MIN);
+  // printf("UCHAR_MAX   :   %d\n", UCHAR_MAX);
+  // printf("UINT_MAX    :   %u\n", (unsigned int) UINT_MAX);
+  // printf("ULONG_MAX   :   %lu\n", (unsigned long) ULONG_MAX);
+  // printf("USHRT_MAX   :   %d\n", (unsigned short) USHRT_MAX);
 
-  FILE* arquivo = fopen("arquivo.txt", "rt");
-  if (arquivo == NULL) exit(1);
-  else printf("Arquivo aberto com sucesso!");
-  
-  fseek(arquivo, 0, SEEK_END);
-  printf("%ld", ftell(arquivo));
-  // for (i = 0; i < 5; i++) {
-  //   fprintf(arquivo, "%-20s\t%d\n", alunos[i]->nome, alunos[i]->matricula);
-  // }
-  
-  // for (i = 0; i < 5; i++) {
-  //   free(alunos[i]);
-  // }
-  fclose(arquivo);
-  
 
+  int a;
+  float b;
+  char c[10];
+
+  while(1) {
+    printf("int: %d\n\n", scanf("%9d", &a));
+    fflush(stdin);
+    printf("float: %d\n\n", scanf("%9f", &b));
+    fflush(stdin);
+    printf("string: %d\n\n", scanf(" %9[^\n]", c));
+    fflush(stdin);
+  }
+  
   return 0;
 }
