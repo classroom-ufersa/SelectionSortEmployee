@@ -13,6 +13,8 @@ char opcoes(void);
 int main(void) { 
     int count_func, ID;
     char opcao;
+    char resp;
+    int novos;
 
     int documento;
     char nome[31], cargo[41];
@@ -64,7 +66,14 @@ int main(void) {
                 break;
 
             case '2':
-                func_listar(funcionario, count_func);
+                printf("\nHa %d funcionarios cadastrados.\nDeseja lista-los [S/N]? ");
+                scanf(" %c", &resp);
+                fflush(stdin);
+    
+                if (toupper(resp) == 'S') {
+                    func_listar(funcionario, count_func);
+                }
+                
                 break;
 
             case '3':
@@ -73,8 +82,8 @@ int main(void) {
                 break;
     
             case '4':
-                char resp;
-                int novos = count_func - ID;
+            
+                novos = count_func - ID;
                 
                 printf("\nEncerrando Programa...\n");
                 if (novos != 0) {

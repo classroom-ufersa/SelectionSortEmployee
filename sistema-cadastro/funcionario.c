@@ -210,8 +210,8 @@ int func_importa(Funcionario **func, int count, int max)
     FILE *entrada = fopen(nome_arquivo, "rt");
     if (entrada == NULL)
     {
-        printf("Nao foi possivel abrir o arquivo de entrada.\n");
-        exit(1);
+        printf("\nEsse arquivo nao existe.\n");
+        return 0;
     }
 
     // verifica se o arquivo está vazio:
@@ -225,7 +225,6 @@ int func_importa(Funcionario **func, int count, int max)
         int repetidos = 0;
 
         fscanf(entrada, "%d\n", &count_import);
-        printf("%d", count_import);
         int i;
         if ((count+count_import) < max)
         {
@@ -251,7 +250,7 @@ int func_importa(Funcionario **func, int count, int max)
                     printf("\n%d cadastros foram importados!\n", (count_import - repetidos));
                 } else
                 {
-                    printf("\nTodos os dados foram importados!");
+                    printf("\nTodos os dados foram importados!\n");
                 }
                 func_ordena(func, count);
             } else
@@ -263,10 +262,7 @@ int func_importa(Funcionario **func, int count, int max)
         {
             printf("\nA quantidade importada excede o limite de cadastro!\n");
         }
-        
-
-        // printf("%d\t%d\t%s\t%s\t%ld\n", func[i]->tag, id, func[i]->nome, func[i]->cargo, func[i]->documento);
-        // printf("\nDados importados!\n");
+  
     } else {
         printf("\nO arquivo selecionado esta vazio!\n");
     }
