@@ -5,13 +5,12 @@
 
 /* Tipo Exportado */
 typedef struct funcionario Funcionario;
-
 /* Funções Exportadas */
 
 /* Função func_cria
   cadastra um novo arquivo funcionário, alocando memória e preenchendo os parâmetros
 */
-Funcionario *func_cadastra(int tag, char *nome, char *cargo, long int documento);
+Funcionario *func_cadastra(int tag, char *nome, char *cargo, long long documento);
 
 /* Função func_libera
   apaga o cadastro de um funcionario, liberando a memória alocada
@@ -47,9 +46,13 @@ void func_listar(Funcionario **func, int count);
 /* Função func_procura
   procura e retorna 1 se o documento que está sendo cadastrado ja está sendo usado, 0 caso contrario
 */
-int func_procura(Funcionario **func, int count, long int documento);
+int func_procura(Funcionario **func, int count, long long documento);
 
 /* Função importa
   lê um arquivo existente e importa os dados para a struct funcionarios
 */
 int func_importa(Funcionario **func, int count, int max);
+
+/*
+*/
+int func_entrada(char *nome, char *cargo, char *doc);

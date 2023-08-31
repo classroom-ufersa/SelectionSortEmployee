@@ -6,6 +6,9 @@
     "time.h": "c",
     "stdlib.h": "c",
     "funcionario.h": "c",
-    "ctype.h": "c"
+    "ctype.h": "c",
+    "dados.h": "c",
+    "funcionario2.h": "c",
+    "locale.h": "c"
   }
 }

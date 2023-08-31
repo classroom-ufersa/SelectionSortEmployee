@@ -1,10 +1,9 @@
-501
+500
 1	Maria	 M�dico	39065975
 2	Giuseppe	 Professor	427118992
 3	Anna	 Engenheiro	376798833
 4	Giovanni	 Advogado	435872409
 5	Antonio	 Enfermeiro	234958598
-501	Arnaldo	 Ferreiro	234958598
 6	Francesco	 Contador	620696799
 7	Andrea	 Programador	648850976
 8	Luigi	 Designer	757386418
