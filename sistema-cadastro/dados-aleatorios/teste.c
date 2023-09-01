@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <string.h>
+#include <ctype.h>
 
 int main(void) {
 
@@ -22,17 +24,21 @@ int main(void) {
 
 
   int a;
-  float b;
-  char c[10];
+  long long aa, b = 12345;
+  char *c, d[3], e[6], f[10] = "ola mundo";
 
-  while(1) {
-    printf("int: %d\n\n", scanf("%9d", &a));
-    fflush(stdin);
-    printf("float: %d\n\n", scanf("%9f", &b));
-    fflush(stdin);
-    printf("string: %d\n\n", scanf(" %9[^\n]", c));
-    fflush(stdin);
-  }
+  c = "ola mundo";
+  sprintf(e, "%05lld", b);
+  aa = (b & 00110);
+  printf("%lld\n",aa);
+  // while(1) {
+  //   printf("int: %d\n\n", scanf("%9d", &a));
+  //   fflush(stdin);
+  //   printf("float: %d\n\n", scanf("%9f", &b));
+  //   fflush(stdin);
+  //   printf("string: %d\n\n", scanf(" %9[^\n]", c));
+  //   fflush(stdin);
+  // }
   
   return 0;
 }
