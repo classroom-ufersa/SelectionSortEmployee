@@ -162,13 +162,15 @@ void func_listar(Funcionario **func, int count)
             
             // subdivide os números do CPF:
             // 000.xxx.xxx-xx
-            int a = (int)(func[i]->documento / 100000000);
+            int a = (int)(func[i]->documento / 100000000); // 100.000.000
             // xxx.000.xxx-xx
-            int b = (int)((func[i]->documento % 100000000) / 100000);
+            int b = (int)((func[i]->documento % 100000000) / 100000); // divide por 100.000 o resto da divisão por 100.000.000
             // xxx.xxx.000-xx
-            int c = (int)((func[i]->documento % 100000) / 100);
+            int c = (int)((func[i]->documento % 100000) / 100); // divide por 100 o resto da divisão por 100.000
             // xxx.xxx.xxx-00
-            int ver = (int)(func[i]->documento % 100);
+            int ver = (int)(func[i]->documento % 100); // resto da divisão por 100
+            // adiciona as partes do CPF, com a formatação adequada
+            // a formatação %03d irá preencher com 0, caso o valor não possua 3 dígitos:
             sprintf(doc_format, "%03d.%03d.%03d-%02d", a, b, c, ver);
             
             if (func[i]->tag == 1) {
@@ -254,7 +256,6 @@ int func_importa(Funcionario **func, FILE* fl, int count, int max)
     return count;
 }
 
-// int func_teste_execucao(Funcionario **func, FILE* fl, int max)
 void func_teste_execucao(FILE* fl, int max)
 {
     int count = 0;
@@ -288,10 +289,6 @@ void func_teste_execucao(FILE* fl, int max)
             }
 
             func_ordena(func, count);
-
-            // for (i = 0; i < count; i++) {
-            //     func[i] = NULL;
-            // }
 
         } else {
             printf(TXT_red"\nA quantidade importada excede o limite de cadastro!\n"TXT_reset);

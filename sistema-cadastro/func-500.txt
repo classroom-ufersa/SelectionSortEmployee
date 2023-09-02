@@ -1,6 +1,6 @@
 500
 ID	NOME	CARGO	CPF
-1	Maria	 M�dico	39065975
+1	Maria	 M�dico	0039065975
 2	Giuseppe	 Professor	427118992
 3	Anna	 Engenheiro	376798833
 4	Giovanni	 Advogado	435872409

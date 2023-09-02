@@ -71,7 +71,7 @@ $$
         {
             if (func_compara(func[primeiroID]->nome, func[j]->nome) == 1) // c6*n*(n-1)/2
             {
-                primeiroID = j; // c7*n*(n-1)
+                primeiroID = j; // c7*n*(n-1)/2
             }
         }
 
@@ -86,7 +86,7 @@ $$
 ```
 Os termos constantes foram nomeados como a, b os termos que acompanham (n) e c os termos que acompanham [n*(n-1)/2]
 
-$$T(n) = O(a + b*n + c*(n^2-n)/2)$$
+$$T(n) = O(a + b*n + c*\cfrac{n^2-n}{2}$$
 
 $$T(n) = O(n^2)$$
 
