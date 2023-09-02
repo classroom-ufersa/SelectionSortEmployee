@@ -47,11 +47,6 @@ $$
 S(P) = (n*84 + 100) Bytes
 $$
 
-
-$$
-S(P) = 
-$$
-
 ## Complexidade de Tempo do Selection Sort
 
 A complexidade de tempo de um algoritmo, T(n), é a análise do tempo de execução do mesmo. O Selection Sort possui complexidade
