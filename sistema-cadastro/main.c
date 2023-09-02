@@ -24,6 +24,8 @@ int main(void) {
     int ID, novos;
     char opcao;
     char resp[3];
+    char nome_arquivo[51];
+    char qtd[6];
 
     long long doc_int;
     char documento[13];
@@ -113,8 +115,7 @@ int main(void) {
                 break;
 
             case '3':
-                char nome_arquivo[51];
-    
+            
                 // busca o arquivo para importação
                 printf("\nInforme o nome do arquivo onde se encontra os dados para importacao: ");
                 scanf(" %50[^\n]", nome_arquivo);
@@ -131,7 +132,7 @@ int main(void) {
                 break;
 
             case '4':
-                char qtd[6];
+                
                 printf("\nInsira a quantidade de dados do arquivo: ");
                 scanf(" %[^\n]", qtd);
                 fflush(stdin);
