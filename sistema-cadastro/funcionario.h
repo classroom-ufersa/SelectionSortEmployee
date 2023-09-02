@@ -49,4 +49,10 @@ int func_procura(Funcionario **func, int count, long long documento);
 /* Função importa
   Lê um arquivo existente e importa os dados para a struct funcionarios
 */
-int func_importa(Funcionario **func, int count, int max);
+int func_importa(Funcionario **func, FILE* fl, int count, int max);
+
+/*
+*/
+void func_teste_execucao(FILE* fl, int max);
+// int func_teste_execucao(Funcionario **func, FILE* fl, int max);
+

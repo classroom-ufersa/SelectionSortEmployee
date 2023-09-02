@@ -9,11 +9,14 @@
 #define TXT_yellow "\x1b[33m"
 #define TXT_reset "\x1b[0m"
 
-#define MAX_FUNC 10000
+#define MAX_FUNC 100000
 
 char opcoes(void);
 int teste_input(char *resp);
-int doc_format(char *doc);
+int teste_formato(char *doc);
+FILE *fl_pior_caso(char *qtd);
+FILE *fl_melhor_caso(char *qtd);
+
 
 int main(void) { 
     printf(TXT_reset);
@@ -64,7 +67,7 @@ int main(void) {
                     scanf(" %12[^\n]", documento);
                     fflush(stdin);
                         
-                    if (doc_format(documento)) {
+                    if (teste_formato(documento)) {
                         if (strlen(documento) > 11) {
                             printf(TXT_red"\nErro! Tamanho maximo do CPF excedido.\n"TXT_reset);
                             break;
@@ -110,10 +113,49 @@ int main(void) {
                 break;
 
             case '3':
-                count_func = func_importa(funcionario, count_func, MAX_FUNC);
-                break;
+                char nome_arquivo[51];
     
+                // busca o arquivo para importação
+                printf("\nInforme o nome do arquivo onde se encontra os dados para importacao: ");
+                scanf(" %50[^\n]", nome_arquivo);
+                fflush(stdin);
+                strcat(nome_arquivo, ".txt");
+                
+                FILE *entrada = fopen(nome_arquivo, "rt");
+                if (entrada == NULL) {
+                    printf(TXT_red"\nEsse arquivo nao existe.\n"TXT_reset);
+                    return 0;
+                }
+                count_func = func_importa(funcionario, entrada, count_func, MAX_FUNC);
+                fclose(entrada);
+                break;
+
             case '4':
+                char qtd[6];
+                printf("\nInsira a quantidade de dados do arquivo: ");
+                scanf(" %[^\n]", qtd);
+                fflush(stdin);
+
+                FILE *piorcaso = fl_pior_caso(qtd);
+                FILE *melhorcaso = fl_melhor_caso(qtd);
+                if (piorcaso == NULL || melhorcaso == NULL) {
+                    printf(TXT_red"\nEsse arquivo nao existe.\n"TXT_reset);
+                    break;
+                }
+
+                printf("\nPior Caso - %s dados:", qtd);
+                func_teste_execucao(piorcaso, MAX_FUNC);
+                // count_func = func_teste_execucao(funcionario, piorcaso, MAX_FUNC);
+                printf("\nMelhor Caso - %s dados:", qtd);
+                func_teste_execucao(melhorcaso, MAX_FUNC);
+                // count_func = func_teste_execucao(funcionario, melhorcaso, MAX_FUNC);
+
+                printf("\nTeste realizado com sucesso!\n");
+                fclose(piorcaso);
+                fclose(melhorcaso);
+                break;
+
+            case '5':
                 novos = count_func - ID;
                 
                 printf("\nEncerrando Programa...\n");
@@ -138,7 +180,7 @@ int main(void) {
                 printf(TXT_red"\nOpcao Invalida! Tente novamente.\n"TXT_reset);
                 break;
         }
-    } while (opcao != '4');
+    } while (opcao != '5');
 
     func_libera(funcionario, count_func);
     return 0;
@@ -150,7 +192,8 @@ char opcoes(void) {
     printf("\n1 - Cadastar funcionario");
     printf("\n2 - Listar funcionarios");
     printf("\n3 - Importar funcionarios");
-    printf("\n4 - Encerrar");
+    printf("\n4 - Teste de execucao Selection Sort");
+    printf("\n5 - Encerrar");
     printf("\nEscolha uma opcao: ");
     return teste_input(op);
 }
@@ -168,12 +211,40 @@ int teste_input(char *resp)
     return 0;
 }
 
-int doc_format(char *doc)
+int teste_formato(char *num)
 {
     int i;
-    for (i = 0; doc[i] != '\0'; i++) {
-        if (!(doc[i] >= '0' && doc[i] <= '9'))
+    for (i = 0; num[i] != '\0'; i++) {
+        if (!(num[i] >= '0' && num[i] <= '9'))
             return 0;
     }
     return 1;
+}
+
+FILE *fl_pior_caso(char *qtd)
+{   
+    if (teste_formato(qtd)) {
+        char arq[51] = "./melhor-caso/dados-";
+        sprintf(arq+strlen(arq), "%s", qtd);
+        strcat(arq, ".txt");
+        FILE *fl = fopen(arq, "rt");
+
+        return fl;
+    } else {
+        return NULL;
+    }
+}
+
+FILE *fl_melhor_caso(char *qtd)
+{   
+    if (teste_formato(qtd)) {
+        char arq[51] = "./pior-caso/dados-";
+        sprintf(arq+strlen(arq), "%s", qtd);
+        strcat(arq, ".txt");
+        FILE *fl = fopen(arq, "rt");
+
+        return fl;
+    } else {
+        return NULL;
+    }
 }
