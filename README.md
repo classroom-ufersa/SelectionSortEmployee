@@ -47,32 +47,32 @@ $$
     int i, primeiroID, j; // c1
     Funcionario *valor_teste; // c2
 
-    for (i = 0; i < count; i++) // c3*(n-1)
+    for (i = 0; i < count; i++) // c3*n
     {
 
-        valor_teste = func[i]; // c4*(n-1)
+        valor_teste = func[i]; // c4*n
 
         primeiroID = i; // c4*(n-1)
-        for (j = i + 1; j < count; j++) //c5*(n-1)*n
+        for (j = i + 1; j < count; j++) //c5*n*(n-1)
         {
-            if (func_compara(func[primeiroID]->nome, func[j]->nome) == 1) // c6*(n-1)*n
+            if (func_compara(func[primeiroID]->nome, func[j]->nome) == 1) // c6*n*(n-1)
             {
-                primeiroID = j; // c7*(n-1)*n
+                primeiroID = j; // c7*n*(n-1)
             }
         }
 
-        if (primeiroID != i) // c8*(n-1)
+        if (primeiroID != i) // c8*n
         {
-            func[i] = func[primeiroID]; // c9*(n-1)
-            func[primeiroID] = valor_teste; // c10*(n-1)
+            func[i] = func[primeiroID]; // c9*n
+            func[primeiroID] = valor_teste; // c10*n
         }
     }
 }
 
 ```
-Os termos constantes foram nomeados como a, b os termos que acompanham (n-1) e c os termos que acompanham (n^2-1)*n
+Os termos constantes foram nomeados como a, b os termos que acompanham (n) e c os termos que acompanham [(n-1)*n]
 
-$$T(n) = O(a + b*(n-1) + c*(n^2-n))$$
+$$T(n) = O(a + b*n + c*(n^2-n))$$
 
 $$T(n) = O(n^2)$$
 
