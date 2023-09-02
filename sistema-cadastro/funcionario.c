@@ -36,16 +36,21 @@ Funcionario *func_cadastra(int tag, char *nome, char *cargo, long long documento
 void func_libera(Funcionario **func, int count)
 {
     int i;
+    // a função libera cada ponteiro do vetor e depois libera o vetor como um todo
     for (i = 0; i < count; i++) {   
         free(func[i]);
     }
     free(func);
 }
 
-int func_compara(char *nome1, char *nome2)
+int func_compara(char *nome1, char *nome2) 
 {
     return strcmp(strupr(nome1), strupr(nome2));
+    // a função compara retorna 1 quando nome1>nome2
+    //                  retorna -1 quando nome2>nome1
+    //                  retorna 0 quando forem iguais
 }
+
 
 void func_ordena(Funcionario **func, int count)
 {
@@ -86,7 +91,10 @@ void func_ordena(Funcionario **func, int count)
     double tempo_sort = (double)(clock() - inicio) / CLOCKS_PER_SEC;
     tempo_sort = tempo_sort * 1000.0; //milisegundos
     printf(TXT_green"\nTempo de execucao: %.50lfms\n"TXT_reset, tempo_sort);
-    // =============================
+    /*
+    clock() retorna um valor do tipo clock_t, mas o valor é medido
+    em unidades de clocks_per_sec, não em tiques do relógio 
+    */
 }
 
 int func_leia(Funcionario **func, FILE* fl)
@@ -289,9 +297,6 @@ void func_teste_execucao(FILE* fl, int max)
 
             func_ordena(func, count);
 
-            // for (i = 0; i < count; i++) {
-            //     func[i] = NULL;
-            // }
 
         } else {
             printf(TXT_red"\nA quantidade importada excede o limite de cadastro!\n"TXT_reset);
