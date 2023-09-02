@@ -86,7 +86,8 @@ $$
 ```
 Os termos constantes foram nomeados como a, b os termos que acompanham (n) e c os termos que acompanham [n*(n-1)/2]
 
-$$T(n) = O(a + b*n + c*(n^2-n)/2)$$
+
+$$T(n) = O(a + bn + c\frac{(n^2-n)}{2})$$
 
 $$T(n) = O(n^2)$$
 
