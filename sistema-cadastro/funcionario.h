@@ -46,13 +46,17 @@ void func_listar(Funcionario **func, int count);
 */
 int func_procura(Funcionario **func, int count, long long documento);
 
-/* Função importa
+/* Função func_importa
   Lê um arquivo existente e importa os dados para a struct funcionarios
 */
 int func_importa(Funcionario **func, FILE* fl, int count, int max);
 
-/*
+/* Função func_teste_execucao
+  Função para testar o tempo de execução da função ordena em diferentes quantidade de dados
 */
 void func_teste_execucao(FILE* fl, int max);
-// int func_teste_execucao(Funcionario **func, FILE* fl, int max);
 
+/* Função func_busca
+  Busca um funcionario específico pelo CPF
+*/
+void func_busca(Funcionario **func, int count, long long documento);

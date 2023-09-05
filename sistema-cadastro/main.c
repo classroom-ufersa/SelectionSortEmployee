@@ -154,8 +154,29 @@ int main(void) {
                 fclose(piorcaso);
                 fclose(melhorcaso);
                 break;
-
             case '5':
+                
+                printf("\nDigite os 11 digitos do CPF (sem \".\" ou \"-\"): ");
+                scanf(" %12[^\n]", documento);
+
+                if (teste_formato(documento)) {
+                    if (strlen(documento) > 11) {
+                        printf(TXT_red"\nErro! Tamanho maximo do CPF excedido.\n"TXT_reset);
+                        break;
+                    } else if (strlen(documento) < 11) {
+                        printf(TXT_yellow"\nO CPF deve conter no minimo 11 digitos.\n"TXT_reset);
+                        break;
+                    }
+                    // converte a string documento em numero:
+                    doc_int = atoll(documento); 
+                    func_busca (funcionario, count_func, doc_int);
+                } else {
+                    printf(TXT_yellow"\nO CPF deve conter apenas numeros.\n"TXT_reset);
+                    break;
+                }
+                break;
+
+            case '6':
                 novos = count_func - ID;
                 
                 printf("\nEncerrando Programa...\n");
@@ -180,7 +201,7 @@ int main(void) {
                 printf(TXT_red"\nOpcao Invalida! Tente novamente.\n"TXT_reset);
                 break;
         }
-    } while (opcao != '5');
+    } while (opcao != '6');
 
     func_libera(funcionario, count_func);
     return 0;
@@ -193,7 +214,8 @@ char opcoes(void) {
     printf("\n2 - Listar funcionarios");
     printf("\n3 - Importar funcionarios");
     printf("\n4 - Teste de execucao Selection Sort");
-    printf("\n5 - Encerrar");
+    printf("\n5 - Buscar funcionario");
+    printf("\n6 - Encerrar");
     printf("\nEscolha uma opcao: ");
     return teste_input(op);
 }
@@ -248,3 +270,4 @@ FILE *fl_melhor_caso(char *qtd)
         return NULL;
     }
 }
+

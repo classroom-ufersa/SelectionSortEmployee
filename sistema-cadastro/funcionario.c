@@ -310,3 +310,34 @@ void func_teste_execucao(FILE* fl, int max)
     free(func);
     // return count;
 }
+
+void func_busca(Funcionario **func, int count, long long documento)
+{   
+    if (count > 0) {
+        int i;
+        for (i = 0; i < count; i++) {   
+            if (func[i]->documento == documento){
+
+                char doc_format[15];
+                // subdivide os números do CPF:
+                // 000.xxx.xxx-xx
+                int a = (int)(func[i]->documento / 100000000);
+                // xxx.000.xxx-xx
+                int b = (int)((func[i]->documento % 100000000) / 100000);
+                // xxx.xxx.000-xx
+                int c = (int)((func[i]->documento % 100000) / 100);
+                // xxx.xxx.xxx-00
+                int ver = (int)(func[i]->documento % 100);
+                sprintf(doc_format, "%03d.%03d.%03d-%02d", a, b, c, ver);
+                
+                printf("\nNome: %s | Cargo: %s | CPF: %s\n", func[i]->nome, func[i]->cargo, doc_format);
+                break;
+            }
+        }
+        if(i == count){
+            printf(TXT_yellow"\nCPF informado nao pertence a nenhum funcionario cadastrado!\n"TXT_reset);
+        }
+    }else{
+        printf(TXT_yellow"\nNao ha nenhum funcionario cadastrado!\n"TXT_reset);
+    }
+}
