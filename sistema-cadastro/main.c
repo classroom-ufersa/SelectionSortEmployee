@@ -104,7 +104,7 @@ int main(void) {
                 printf("\nHa %d funcionarios cadastrados.\n", count_func);
                 if(count_func != 0){
                     while (1) {
-                        printf("\nDeseja Lista-los [S/N]? ");
+                        printf("\nDeseja lista-los [S/N]? ");
                         int cont = teste_input(resp);
                         if (cont == 'S') {
                             func_listar(funcionario, count_func);
