@@ -37,14 +37,14 @@ O projeto de ordenação de strings emprega o algoritmo Selection Sort por meio 
 
 A complexidade de espaço de um algoritmo, S(P), é a análise do espaço de memória requerido para a sua execução, que consiste tanto a parte fixa quanto a parte variável do espaço. 
 
-No Selection Sort, a parte fixa consiste nas quatro variáveis do tipo `int`, que ocupam 4 Bytes de memória cada, e o ponteiro para a struct `Funcionario`, que possui 84 Bytes, considerando o tamanho de todos os parâmetros juntos. Totalizando 100 Bytes fixos.
+No Selection Sort, a parte fixa consiste nas quatro variáveis do tipo `int`, que ocupam 4 Bytes de memória cada, e o ponteiro para a struct `Funcionario`, que possui 8 Bytes, considerando o tamanho de todos os parâmetros juntos. Totalizando 24 Bytes fixos.
 
-E a parte variável, consiste no vetor de ponteiros para a struct `Funcionario`, que irá ocupar o equivalente a (n*84) Bytes, sendo n o número de entrada da variável `int count`.
+E a parte variável, consiste no vetor de ponteiros para a struct `Funcionario`, que irá ocupar o equivalente a (n*8) Bytes, sendo n o número de entrada da variável `int count`.
 
 Dessa forma, o Selection Sort possui complexidade espacial de
-
+<!-- 4 inteiros = 16 Bytes | ponteiro para a struct = 8 Bytes -->
 $$
-S(P) = (n*84 + 100) Bytes
+S(P) = (n*8 + 24) Bytes
 $$
 
 ## Complexidade de Tempo do Selection Sort
@@ -84,12 +84,20 @@ $$
 }
 
 ```
+<p align="center">
+ <img height="440px" src="complexidade temporal.png"/>
+</p>
+
 Os termos constantes foram nomeados como a, b os termos que acompanham (n) e c os termos que acompanham [n*(n-1)/2]
 
 
-$$T(n) = O(a + bn + c\frac{(n^2-n)}{2})$$
+$$T(n) = O\left(a + bn + c\left(\frac{(n^2-n)}{2}\right)\right)$$
 
 $$T(n) = O(n^2)$$
+
+<p align="center">
+ <img height="400px" src="Dados analisados por iteração.png"/>
+</p>
 
 ## Exemplificando o funcionamento do Selection Sort 
 <p align="center">
