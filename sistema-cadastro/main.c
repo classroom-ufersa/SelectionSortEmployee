@@ -246,7 +246,7 @@ int teste_formato(char *num)
 FILE *fl_pior_caso(char *qtd)
 {   
     if (teste_formato(qtd)) {
-        char arq[51] = "./melhor-caso/dados-";
+        char arq[51] = "./pior-caso/dados-";
         sprintf(arq+strlen(arq), "%s", qtd);
         strcat(arq, ".txt");
         FILE *fl = fopen(arq, "rt");
@@ -260,7 +260,7 @@ FILE *fl_pior_caso(char *qtd)
 FILE *fl_melhor_caso(char *qtd)
 {   
     if (teste_formato(qtd)) {
-        char arq[51] = "./pior-caso/dados-";
+        char arq[51] = "./melhor-caso/dados-";
         sprintf(arq+strlen(arq), "%s", qtd);
         strcat(arq, ".txt");
         FILE *fl = fopen(arq, "rt");

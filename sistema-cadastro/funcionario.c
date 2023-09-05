@@ -287,7 +287,6 @@ void func_teste_execucao(FILE* fl, int max)
         // pula a linha do cabeçalho:
         char linha[100];
         fgets(linha, 100, fl);
-
         // verifica há espaço para receber os dados importados:
         if (count <= max) {
             for (i = 0; i < count; i++) {
