@@ -51,7 +51,7 @@ int main(void) {
             case '1':  
                 if (count_func < MAX_FUNC) {
                     printf("Digite o nome: ");
-                    scanf(" %31[^0-9\n]", nome);
+                    scanf(" %31[^\n]", nome);
                     fflush(stdin); 
                     if (strlen(nome) > 30) {
                         printf(TXT_red"\nErro! Tamanho maximo do nome excedido.\n"TXT_reset);
@@ -270,4 +270,3 @@ FILE *fl_melhor_caso(char *qtd)
         return NULL;
     }
 }
-
