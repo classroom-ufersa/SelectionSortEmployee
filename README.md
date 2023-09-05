@@ -85,7 +85,7 @@ $$
 
 ```
 <p align="center">
- <img height="440px" src="complexidade temporal.png"/>
+ <img height="440px" src="./imagens/complexidade temporal.png"/>
 </p>
 
 Os termos constantes foram nomeados como a, b os termos que acompanham (n) e c os termos que acompanham [n*(n-1)/2]
@@ -96,10 +96,10 @@ $$T(n) = O\left(a + bn + c\left(\frac{(n^2-n)}{2}\right)\right)$$
 $$T(n) = O(n^2)$$
 
 <p align="center">
- <img height="400px" src="Dados analisados por iteração.png"/>
+ <img height="400px" src="./imagens/Dados analisados por iteração.png"/>
 </p>
 
 ## Exemplificando o funcionamento do Selection Sort 
 <p align="center">
- <img src="selection-sort-animation.gif"/>
+ <img src="./imagens/selection-sort-animation.gif"/>
 </p>
