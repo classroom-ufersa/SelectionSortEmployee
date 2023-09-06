@@ -125,7 +125,7 @@ int main(void) {
                 FILE *entrada = fopen(nome_arquivo, "rt");
                 if (entrada == NULL) {
                     printf(TXT_red"\nEsse arquivo nao existe.\n"TXT_reset);
-                    return 0;
+                    break;
                 }
                 count_func = func_importa(funcionario, entrada, count_func, MAX_FUNC);
                 fclose(entrada);
