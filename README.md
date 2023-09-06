@@ -66,19 +66,19 @@ $$
 
         valor_teste = func[i]; // c4*n
 
-        primeiroID = i; // c4*n
-        for (j = i + 1; j < count; j++) //c5*n*(n-1)/2
+        primeiroID = i; // c5*n
+        for (j = i + 1; j < count; j++) //c6*n*(n-1)/2
         {
-            if (func_compara(func[primeiroID]->nome, func[j]->nome) == 1) // c6*n*(n-1)/2
+            if (func_compara(func[primeiroID]->nome, func[j]->nome) == 1) // c7*n*(n-1)/2
             {
-                primeiroID = j; // c7*n*(n-1)
+                primeiroID = j; // c8*n*(n-1)/2
             }
         }
 
-        if (primeiroID != i) // c8*n
+        if (primeiroID != i) // c9*n
         {
-            func[i] = func[primeiroID]; // c9*n
-            func[primeiroID] = valor_teste; // c10*n
+            func[i] = func[primeiroID]; // c10*n
+            func[primeiroID] = valor_teste; // c11*n
         }
     }
 }
