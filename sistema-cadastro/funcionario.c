@@ -17,6 +17,17 @@ struct funcionario
     long long documento;
 };
 
+// Utilities
+/*converte string para maiusculo*/
+void maiusculo(char *s1, char *s2){
+    int i = 0;
+    while(s1[i] != '\0'){
+        s2[i] = toupper(s1[i]);
+        i++;
+    }
+    s2[i] = '\0';
+}
+
 Funcionario *func_cadastra(int tag, char *nome, char *cargo, long long documento)
 {
     Funcionario *funcionario = (Funcionario *)malloc(sizeof(Funcionario));
@@ -25,8 +36,10 @@ Funcionario *func_cadastra(int tag, char *nome, char *cargo, long long documento
         printf(TXT_red"Sem memória!"TXT_reset);
         exit(1);
     }
-    strcpy(funcionario->nome, strupr(nome));
-    strcpy(funcionario->cargo, strupr(cargo));
+    maiusculo(nome, nome);
+    maiusculo(cargo, cargo);
+    strcpy(funcionario->nome, nome);
+    strcpy(funcionario->cargo, cargo);
     funcionario->documento = documento;
     funcionario->tag = tag;
 
@@ -45,7 +58,9 @@ void func_libera(Funcionario **func, int count)
 
 int func_compara(char *nome1, char *nome2) 
 {
-    return strcmp(strupr(nome1), strupr(nome2));
+    maiusculo(nome1, nome1);
+    maiusculo(nome2, nome2);
+    return strcmp(nome1, nome2);
     // a função compara retorna 1 quando nome1>nome2
     //                  retorna -1 quando nome2>nome1
     //                  retorna 0 quando forem iguais
