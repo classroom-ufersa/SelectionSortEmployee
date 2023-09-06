@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "funcionario.h"
+#include "funcionario.c"
 
 #define TXT_red "\x1b[31m"
 #define TXT_yellow "\x1b[33m"
